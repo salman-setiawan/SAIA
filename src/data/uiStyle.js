@@ -28,11 +28,11 @@ export const textInverted = 'text-black';
 
 
 // Component Specs
-export const buttonSpecs = `px-4 py-2 rounded-md ${textSmall} font-medium shadow-lg shadow-black/10 cursor-pointer bg-gradient-to-tl from-[#2a28d8] to-[#4642ff]`;
+export const buttonSpecs = `px-4 py-2 rounded-md ${textSmall} font-medium shadow-lg shadow-black/10 cursor-pointer bg-gradient-to-tl from-[#221E90] to-[#3932FF] hover:bg-gradient-to-tl hover:from-[#252435] hover:to-[#42415D]`;
 
 export const multibuttonSpecs = `px-4 py-2 rounded-md ${textSmall} font-medium shadow-lg shadow-black/10 cursor-pointer`;
-export const multibuttonActive = `bg-gradient-to-tl from-[#2a28d8] to-[#4642ff]`;
-export const multibuttonInactive = `bg-[#202020]`;
+export const multibuttonActive = `bg-gradient-to-tl from-[#221E90] to-[#3932FF] hover:bg-gradient-to-tl hover:from-[#252435] hover:to-[#42415D]`;
+export const multibuttonInactive = `bg-[#202020] hover:bg-[#141414]`;
 
 export const cardSpecs = `p-3 rounded-md border border-white/2 bg-gradient-to-tl from-[#121212] to-[#202020]`;
 export const chipSpecs = `px-2 py-0.5 rounded-full ${textPrimary100}`;

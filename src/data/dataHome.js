@@ -10,7 +10,7 @@ const DataHome = {
     },
     cta: [
       { en: 'Consult via Whatsapp', id: 'Konsultasi via Whatsapp' },
-      { en: 'Our Work Result', id: 'Hasil Kerja Kami' },
+      { en: 'See Our Project', id: 'Lihat Proyek Kami' },
     ],
   },
 
@@ -78,17 +78,17 @@ const DataHome = {
     },
     benefit: [
       {
-        img: '',
+        icon: 'verified',
         head: { en: 'Guaranteed Quality', id: 'Kualitas Terjamin' },
         desc: { en: 'Your website is built with professional standards. Fast, mobile friendly, and SEO optimized.', id: 'Website kamu akan dirancang dengan standar profesional. Cepat, mobile-friendly, dan SEO-ready.' },
       },
       {
-        img: '',
+        icon: 'edit_note',
         head: { en: 'Free Copywriting', id: 'Copywriting Gratis' },
         desc: { en: 'We help you write compelling content that improves conversions.', id: 'Desain menarik saja tidak cukup. Kami bantu siapkan copywriting yang meyakinkan dan mampu meningkatkan konversi.' },
       },
       {
-        img: '',
+        icon: 'support_agent',
         head: { en: 'Full Support', id: 'Dukungan Penuh' },
         desc: { en: 'We stay available to assist you even after development is complete.', id: 'Bingung atau ada kendala? Kami selalu siap bantu bahkan setelah website selesai dikerjakan.' },
       },

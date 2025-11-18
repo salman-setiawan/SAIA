@@ -1,7 +1,7 @@
 @import 'tailwindcss';
 
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Momo Trust Sans", sans-serif;
 
   color-scheme: light dark;
   background-color: #0c0c0c;
