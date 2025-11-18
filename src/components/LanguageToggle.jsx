@@ -17,7 +17,7 @@ const LanguageToggle = () => {
     <button
       type="button"
       onClick={switchLanguage}
-      className="relative flex gap-x-1 min-w-[60px] items-center gap-1 rounded-full border border-white/8 bg-[#202020]/80 px-1 py-1 text-[12px] font-semibold tracking-wide text-white transition-all duration-300"
+      className="relative flex gap-x-1 min-w-[60px] items-center gap-1 rounded-full border border-white/8 bg-[#202020]/50 px-1 py-1 text-[12px] tracking-wide text-white transition-all duration-300"
       aria-label="Toggle language"
       aria-pressed={isEnglish}
     >
@@ -29,8 +29,8 @@ const LanguageToggle = () => {
           right: isEnglish ? 'calc(50%)' : '4px',
         }}
       />
-      <span className={`relative z-10 flex-1 w-[28px] rounded-full text-center transition-colors ${isEnglish ? 'text-black' : 'text-white/50'}`}> EN </span>
-      <span className={`relative z-10 flex-1 w-[28px] rounded-full text-center transition-colors ${!isEnglish ? 'text-black' : 'text-white/50'}`}> ID </span>
+      <span className={`relative z-10 flex-1 w-[28px] rounded-full text-center transition-colors ${isEnglish ? 'text-black font-bold' : 'text-white'}`}> EN </span>
+      <span className={`relative z-10 flex-1 w-[28px] rounded-full text-center transition-colors ${!isEnglish ? 'text-black font-bold' : 'text-white'}`}> ID </span>
     </button>
   );
 };
