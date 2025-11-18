@@ -15,7 +15,7 @@ const ParallaxWithModel = () => {
         speed={0.3}
       />
 
-      <div className="absolute inset-0 pointer-events-none flex justify-center items-center top-80 right-30 sm:right-0">
+      <div className="absolute inset-0 pointer-events-none flex justify-center items-center top-80 right-22 sm:right-0">
         <DraggableModel>
           <div className="w-[540px] md:w-[800px] lg:w-[1080px] xl:w-[1400px]">
             <div className="scale-[0.6] md:scale-[0.9] rounded-xl overflow-hidden shadow-2xl pointer-events-auto">
