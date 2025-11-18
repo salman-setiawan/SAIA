@@ -1,7 +1,7 @@
 // Typography
-export const textHeading1 = 'text-[32px] font-semibold mb-2';
-export const textHeading2 = 'text-[24px] font-semibold mb-2';
-export const textHeading3 = 'text-[18px] font-medium mb-1';
+export const textHeading1 = 'text-[32px] font-semibold';
+export const textHeading2 = 'text-[24px] font-semibold';
+export const textHeading3 = 'text-[18px] font-medium';
 export const textRegular = 'text-[16px]';
 export const textSmall = 'text-[14px]';
 export const textTiny = 'text-[12px]';
@@ -28,8 +28,13 @@ export const textInverted = 'text-black';
 
 
 // Component Specs
-export const buttonSpecs = `px-4 py-2 rounded-md ${textSmall} font-medium ${basePrimary200} shadow-lg shadow-black/10`;
-export const cardSpecs = `p-3 rounded-md ${baseNeutral300} border border-white/5`;
+export const buttonSpecs = `px-4 py-2 rounded-md ${textSmall} font-medium shadow-lg shadow-black/10 cursor-pointer bg-gradient-to-tl from-[#2a28d8] to-[#4642ff]`;
+
+export const multibuttonSpecs = `px-4 py-2 rounded-md ${textSmall} font-medium shadow-lg shadow-black/10 cursor-pointer`;
+export const multibuttonActive = `bg-gradient-to-tl from-[#2a28d8] to-[#4642ff]`;
+export const multibuttonInactive = `bg-[#202020]`;
+
+export const cardSpecs = `p-3 rounded-md border border-white/2 bg-gradient-to-tl from-[#121212] to-[#202020]`;
 export const chipSpecs = `px-2 py-0.5 rounded-full ${textPrimary100}`;
 export const dropdownOuterSpecs = ``;
 export const dropdownButtonSpecs = ``;
