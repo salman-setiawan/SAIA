@@ -1,140 +1,198 @@
-import React from 'react'
+import React from 'react';
 import { useLanguage } from '../components/LanguageContext';
-import CardPricing from '../components/CardPricing'
-import { textHeading1, textHeading2, textRegular } from '../data/uiStyle';
+import CardPricing from '../components/CardPricing';
+import { textHeading1, textHeading2, textRegular, textSemi, textSmall } from '../data/uiStyle';
 import Button from '../components/Button';
 import CardBenefit from '../components/CardBenefit';
 import CardFeature from '../components/CardFeature';
+import CardUserflow from '../components/CardUserflow';
+import DataHome from '../data/dataHome';
+import TypingText from '../motion/TypingText';
+import ParallaxBanner from '../motion/ParallaxBanner';
+import ParallaxWithModel from '../motion/ParallaxWithModel';
 
 const Home = () => {
   const { language } = useLanguage();
 
+  const words = {
+    en: ["Website", "Apps", "Systems"],
+    id: ["Website", "Aplikasi", "Sistem"]
+  };
+
+  const [activeService, setActiveService] = React.useState(
+    DataHome.pricingSection.services[0].id
+  );
+
+  const services = DataHome.pricingSection.services;
+  const selected = services.find(s => s.id === activeService);
+
   return (
-    <div className={`flex w-full justify-center`}>
-      <div className="flex flex-col px-5 w-full lg:w-[1080px]">
-        {/* Hero Section */}
-        <div className="flex flex-col justify-center py-16 gap-y-6">
-          <div className="flex flex-col gap-y-1">
-            <div className={`${textHeading1} md:text-center`}>
-              {language === 'en' ? "Hero Section" : "Hero Section"}
-            </div>
-            <div className={`${textRegular} text-justify md:text-center`}>
-              {language === 'en' ? "Kami siap bantu kamu punya website yang tampil meyakinkan, cepat, dan siap promosi! Mulai dari company profile, landing page, sampai toko online semua bisa kamu dapatkan dengan mudah dan tanpa ribet." : "Kami siap bantu kamu punya website yang tampil meyakinkan, cepat, dan siap promosi! Mulai dari company profile, landing page, sampai toko online semua bisa kamu dapatkan dengan mudah dan tanpa ribet."}
-            </div>
+    <div className="flex flex-col justify-center items-center">
+
+      {/* Hero Section */}
+      <div className="flex flex-col gap-y-6 w-full lg:w-[980px] pt-8 pb-10 px-5">
+        <div className="flex flex-col gap-y-3">
+          <div className={`${textHeading1} max-w-[360px] md:max-w-full leading-11`}>
+            {language === "en" ? (
+              <>Want to make <span className="bg-gradient-to-r from-[#CAC8FF] to-[#7A76FD] bg-clip-text text-transparent">
+                <TypingText words={words[language]} />
+              </span> for your business?</>
+            ) : (
+              <>Ingin buat <span className="bg-gradient-to-r from-[#CAC8FF] to-[#7A76FD] bg-clip-text text-transparent">
+                <TypingText words={words[language]} />
+              </span> untuk bisnis kamu?</>
+            )}
           </div>
-          <div className="flex gap-x-2 md:justify-center">
-            <Button label={language === 'en' ? 'Order Now' : 'Order Sekarang'} width='w-fit' />
-            <Button label={language === 'en' ? 'Order Now' : 'Order Sekarang'} width='w-fit' />
-          </div>
-        </div>
-        {/* Feature Section */}
-        <div className="flex flex-col justify-center py-16 gap-y-6">
-          <div className="flex flex-col gap-y-1">
-            <div className={`${textHeading2} md:text-center`}>
-              {language === 'en' ? "Feature Section" : "Feature Section"}
-            </div>
-            <div className={`${textRegular} text-justify md:text-center`}>
-              {language === 'en' ? "Kami siap bantu kamu punya website yang tampil meyakinkan, cepat, dan siap promosi!" : "Kami siap bantu kamu punya website yang tampil meyakinkan, cepat, dan siap promosi!"}
-            </div>
-          </div>
-          <div className="flex flex-col lg:flex-row gap-2">
-            <CardFeature 
-              label='This is Label'
-              desc='Kami siap bantu kamu punya website yang tampil meyakinkan, cepat, dan siap promosi!'
-            />
-            <CardFeature 
-              label='This is Label'
-              desc='Kami siap bantu kamu punya website yang tampil meyakinkan, cepat, dan siap promosi!'
-            />
-            <CardFeature 
-              label='This is Label'
-              desc='Kami siap bantu kamu punya website yang tampil meyakinkan, cepat, dan siap promosi!'
-            />
+
+          <div className={`${textRegular} text-justify max-w-[520px] text-white/80`}>
+            {DataHome.heroSection.desc[language]}
           </div>
         </div>
-        {/* Benefit Section */}
-        <div className="flex flex-col justify-center py-16 gap-y-6">
-          <div className="flex flex-col gap-y-1">
-            <div className={`${textHeading2} md:text-center`}>
-              {language === 'en' ? "Benefit Section" : "Benefit Section"}
-            </div>
-            <div className={`${textRegular} text-justify md:text-center`}>
-              {language === 'en' ? "Kami siap bantu kamu punya website yang tampil meyakinkan, cepat, dan siap promosi!" : "Kami siap bantu kamu punya website yang tampil meyakinkan, cepat, dan siap promosi!"}
-            </div>
-          </div>
-          <div className="columns-1 md:columns-2 space-y-2 gap-x-2">
-            <CardBenefit 
-              label='This is Label'
-              desc='Kami siap bantu kamu punya website yang tampil meyakinkan, cepat, dan siap promosi!'
-            />
-            <CardBenefit 
-              label='This is Label'
-              desc='Kami siap bantu kamu punya website yang tampil meyakinkan, cepat, dan siap promosi!'
-            />
-            <CardBenefit 
-              label='This is Label'
-              desc='Kami siap bantu kamu punya website yang tampil meyakinkan, cepat, dan siap promosi!'
-            />
-            <CardBenefit 
-              label='This is Label'
-              desc='Kami siap bantu kamu punya website yang tampil meyakinkan, cepat, dan siap promosi!'
-            />
-          </div>
+
+        <div className="flex gap-x-2">
+          {DataHome.heroSection.cta.map((c, index) => (
+            <Button key={index} label={c[language]} width="w-fit" />
+          ))}
         </div>
-        {/* Userlow Section */}
-        <div className="flex flex-col justify-center py-16 gap-y-6">
-          <div className="flex flex-col gap-y-1">
-            <div className={`${textHeading2} md:text-center`}>
-              {language === 'en' ? "Userflow Section" : "Userflow Section"}
+
+        <div className="flex flex-row gap-x-8">
+          {DataHome.indicatorSection.map((item, index) => (
+            <div key={index}>
+              <div className={textHeading2}>{item.indicator}</div>
+              <div className={`${textSemi} ${textSmall} font-medium`}>
+                {item.desc[language]}
+              </div>
             </div>
-            <div className={`${textRegular} text-justify md:text-center`}>
-              {language === 'en' ? "Kami siap bantu kamu punya website yang tampil meyakinkan, cepat, dan siap promosi!" : "Kami siap bantu kamu punya website yang tampil meyakinkan, cepat, dan siap promosi!"}
-            </div>
-          </div>
-        </div>
-        {/* Pricing Section */}
-        <div className="flex flex-col justify-center py-16 gap-y-6">
-          <div className="flex flex-col gap-y-1">
-            <div className={`${textHeading2} md:text-center`}>
-              {language === 'en' ? "Pricing Section" : "Pricing Section"}
-            </div>
-            <div className={`${textRegular} text-justify md:text-center`}>
-              {language === 'en' ? "Kami siap bantu kamu punya website yang tampil meyakinkan, cepat, dan siap promosi!" : "Kami siap bantu kamu punya website yang tampil meyakinkan, cepat, dan siap promosi!"}
-            </div>
-          </div>
-          <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
-            <CardPricing 
-              price='Rp. 1.500.000'
-              desc={language === 'en' ? "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book." : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."}
-              cta={language === 'en' ? 'Order Now' : 'Order Sekarang'}
-            />
-            <CardPricing 
-              price='Rp. 1.500.000'
-              desc={language === 'en' ? "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book." : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."}
-              cta={language === 'en' ? 'Order Now' : 'Order Sekarang'}
-            />
-            <CardPricing 
-              price='Rp. 1.500.000'
-              desc={language === 'en' ? "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book." : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."}
-              cta={language === 'en' ? 'Order Now' : 'Order Sekarang'}
-            />
-          </div>
-        </div>
-        {/* CTA Section */}
-        <div className="flex flex-col justify-center py-16 gap-y-6">
-          <div className="flex flex-col gap-y-1">
-            <div className={`${textHeading2} md:text-center`}>
-              {language === 'en' ? "CTA Section" : "CTA Section"}
-            </div>
-            <div className={`${textRegular} text-justify md:text-center`}>
-              {language === 'en' ? "Kami siap bantu kamu punya website yang tampil meyakinkan, cepat, dan siap promosi! Mulai dari company profile, landing page, sampai toko online semua bisa kamu dapatkan dengan mudah dan tanpa ribet." : "Kami siap bantu kamu punya website yang tampil meyakinkan, cepat, dan siap promosi! Mulai dari company profile, landing page, sampai toko online semua bisa kamu dapatkan dengan mudah dan tanpa ribet."}
-            </div>
-          </div>
-          <div className="flex md:justify-center"><Button label={language === 'en' ? 'Order Now' : 'Order Sekarang'} width='w-fit' /></div>
+          ))}
         </div>
       </div>
-    </div>
-  )
-}
 
-export default Home
+      {/* Banner */}
+      <ParallaxWithModel />
+
+      {/* Feature Section */}
+      <div className="flex flex-col gap-y-6 w-full lg:w-[980px] py-10 px-5">
+        <div className="flex flex-col">
+          <div className={`${textHeading2} md:text-center`}>
+            {DataHome.featureSection.head[language]}
+          </div>
+          <div className={`${textRegular} text-justify md:text-center text-white/80`}>
+            {DataHome.featureSection.desc[language]}
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
+          {DataHome.featureSection.feature.map((f, index) => (
+            <CardFeature
+              key={index}
+              label={f.head[language]}
+              desc={f.desc[language]}
+            />
+          ))}
+        </div>
+      </div>
+
+      {/* Benefit Section */}
+      <div className="flex flex-col gap-y-6 w-full lg:w-[980px] py-16 px-5">
+        <div className="flex flex-col gap-y-1">
+          <div className={`${textHeading2} md:text-center`}>
+            {DataHome.benefitSection.head[language]}
+          </div>
+          <div className={`${textRegular} text-justify md:text-center text-white/80`}>
+            {DataHome.benefitSection.desc[language]}
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
+          {DataHome.benefitSection.benefit.map((b, index) => (
+            <CardBenefit
+              key={index}
+              label={b.head[language]}
+              desc={b.desc[language]}
+            />
+          ))}
+        </div>
+      </div>
+
+      {/* Userflow Section */}
+      <div className="flex flex-col gap-y-6 w-full py-16">
+        <div className="flex flex-col gap-y-1 px-5">
+          <div className={`${textHeading2} md:text-center`}>
+            {DataHome.clientflowSection.head[language]}
+          </div>
+          <div className={`${textRegular} text-justify md:text-center text-white/80`}>
+            {DataHome.clientflowSection.head[language]}
+          </div>
+        </div>
+
+        <div className="flex gap-x-4 py-6 bg-[#282828] px-5 overflow-x-scroll">
+          {DataHome.clientflowSection.flow.map((flow, index) => (
+            <CardUserflow
+              key={index}
+              num={index + 1}
+              label={flow.head[language]}
+              desc={flow.desc[language]}
+            />
+          ))}
+        </div>
+      </div>
+
+      {/* Pricing Section */}
+      <div className="flex flex-col gap-y-6 w-full lg:w-[980px] py-16 px-5">
+
+        <div className="flex flex-col gap-y-4">
+          <div className={`${textHeading2} md:text-center`}>
+            {DataHome.pricingSection.head[language]}
+          </div>
+
+          <div className="flex flex-wrap gap-2 md:justify-center">
+            {services.map(service => (
+              <Button
+                key={service.id}
+                type="multi"
+                active={activeService === service.id}
+                label={service.label[language]}
+                width="w-fit"
+                onClick={() => setActiveService(service.id)}
+              />
+            ))}
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 justify-center">
+          {selected.packages.map((p, index) => (
+            <CardPricing
+              key={index}
+              price={typeof p.price === 'string' ? p.price : p.price[language]}
+              desc={p.desc[language]}
+              benefit={p.benefit}
+              cta={p.cta[language]}
+            />
+          ))}
+        </div>
+      </div>
+
+      {/* CTA Section */}
+      <div className="flex flex-col gap-y-6 w-full lg:w-[980px] py-16 px-5">
+        <div className="flex flex-col gap-y-1">
+          <div className={`${textHeading2} md:text-center`}>
+            {DataHome.ctaSection.head[language]}
+          </div>
+          <div className={`${textRegular} text-justify md:text-center text-white/80`}>
+            {DataHome.ctaSection.desc[language]}
+          </div>
+        </div>
+
+        <div className="flex md:justify-center">
+          <Button
+            label={DataHome.ctaSection.cta[0][language]}
+            width="w-fit"
+          />
+        </div>
+      </div>
+
+    </div>
+  );
+};
+
+export default Home;
