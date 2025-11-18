@@ -17,7 +17,7 @@ const LanguageToggle = () => {
     <button
       type="button"
       onClick={switchLanguage}
-      className="relative flex gap-x-1 min-w-[60px] items-center gap-1 rounded-full border border-white/8 bg-white/5 px-1 py-1 text-[11px] font-semibold tracking-wide text-white transition-all duration-300"
+      className="relative flex gap-x-1 min-w-[60px] items-center gap-1 rounded-full border border-white/8 bg-[#202020]/80 px-1 py-1 text-[12px] font-semibold tracking-wide text-white transition-all duration-300"
       aria-label="Toggle language"
       aria-pressed={isEnglish}
     >
