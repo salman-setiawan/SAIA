@@ -1,12 +1,8 @@
 const DataHome = {
   heroSection: {
-    head: {
-      en: 'Need a Website, App, or System for your business?',
-      id: 'Butuh Website, Aplikasi, atau Sistem untuk bisnis kamu?',
-    },
     desc: {
-      en: 'We help you build company profile websites, landing pages, and online stores that look professional and convert visitors.',
-      id: 'Kami siap bantu buatkan website company profile, landing page, hingga toko online yang optimal dan menarik pelanggan.',
+      en: 'We help you build a fast and clear website that attracts customers. You get a professional company profile, a conversion-focused landing page, and an easy-to-use online store.',
+      id: 'Kami bantu kamu punya website yang cepat, jelas, dan siap menarik pelanggan. Kamu bisa dapat company profile yang profesional, landing page yang fokus pada konversi, dan toko online yang mudah digunakan.',
     },
     cta: [
       { en: 'Consult via Whatsapp', id: 'Konsultasi via Whatsapp' },
@@ -137,7 +133,7 @@ const DataHome = {
     },
     services: [
       {
-        id: 'landing',
+        id: 4,
         label: { en: 'Landing Page', id: 'Landing Page' },
         packages: [
           {
@@ -188,7 +184,7 @@ const DataHome = {
         ]
       },
       {
-        id: 'company',
+        id: 5,
         label: { en: 'Company Profile Website', id: 'Website Company Profile' },
         packages: [
           {
@@ -239,7 +235,7 @@ const DataHome = {
         ]
       },
       {
-        id: 'store',
+        id: 1,
         label: { en: 'Online Store', id: 'Toko Online' },
         packages: [
           {
@@ -290,7 +286,7 @@ const DataHome = {
         ]
       },
       {
-        id: 'customapp',
+        id: 2,
         label: { en: 'Custom Web App', id: 'Aplikasi Web Kustom' },
         packages: [
           {
@@ -341,7 +337,7 @@ const DataHome = {
         ]
       },
       {
-        id: 'erp',
+        id: 3,
         label: { en: 'ERP System', id: 'Sistem ERP' },
         packages: [
           {

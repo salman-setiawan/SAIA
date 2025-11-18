@@ -15,15 +15,16 @@ const Home = () => {
   const { language } = useLanguage();
 
   const words = {
-    en: ["Website", "Apps", "Systems"],
-    id: ["Website", "Aplikasi", "Sistem"]
+    en: ["Scale Up", "Digitalize"],
+    id: ["Kembangkan", "Digitalisasi"]
   };
 
+  const services = [...DataHome.pricingSection.services].sort((a, b) => a.id - b.id);
+
   const [activeService, setActiveService] = React.useState(
-    DataHome.pricingSection.services[0].id
+    services[0].id
   );
 
-  const services = DataHome.pricingSection.services;
   const selected = services.find(s => s.id === activeService);
 
   return (
@@ -35,17 +36,19 @@ const Home = () => {
         <div className="flex flex-col gap-y-3">
           <div className={`${textHeading1} max-w-[360px] md:max-w-full leading-11`}>
             {language === "en" ? (
-              <>Want to make <span className="bg-gradient-to-r from-[#CAC8FF] to-[#7A76FD] bg-clip-text text-transparent">
+              <>Want to <span className="bg-gradient-to-r from-[#CAC8FF] to-[#7A76FD] bg-clip-text text-transparent">
                 <TypingText words={words[language]} />
-              </span> for your business?</>
+              </span>
+              <span className="block">your business?</span></>
             ) : (
-              <>Ingin buat <span className="bg-gradient-to-r from-[#CAC8FF] to-[#7A76FD] bg-clip-text text-transparent">
+              <>Ingin <span className="bg-gradient-to-r from-[#CAC8FF] to-[#7A76FD] bg-clip-text text-transparent">
                 <TypingText words={words[language]} />
-              </span> untuk bisnis kamu?</>
+              </span>
+              <span className="block">bisnis kamu?</span></>
             )}
           </div>
 
-          <div className={`${textRegular} text-justify max-w-[520px] ${textSemi}`}>
+          <div className={`${textRegular} text-justify max-w-[560px] ${textSemi}`}>
             {DataHome.heroSection.desc[language]}
           </div>
         </div>
