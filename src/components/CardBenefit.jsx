@@ -6,7 +6,7 @@ const CardBenefit = ({ icon, label, desc }) => {
     <div className={`${cardSpecs} flex flex-col gap-y-3`}>
       <div className={`bg-[#141414] rounded-lg p-2 w-fit flex justify-center items-center`}>
         <span
-          className="material-symbols-outlined text-[#CAC8FF]"
+          className="material-symbols-outlined text-[#8EC5FF]"
           style={{ fontSize: '32px', fontVariationSettings: "'opsz' 32" }}
         >
           {icon || 'workspace_premium'}

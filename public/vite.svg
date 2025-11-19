@@ -1,12 +1,12 @@
 <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect width="120" height="120" rx="20" fill="url(#paint0_linear_193_3155)"/>
-<rect x="18" y="101.433" width="91.5524" height="22.2834" rx="11.1417" transform="rotate(-75 18 101.433)" fill="#141414"/>
+<rect x="18" y="100.431" width="91.5524" height="22.2834" rx="11.1417" transform="rotate(-75 18 100.431)" fill="#141414"/>
 <rect x="18.4473" y="85.417" width="79.0209" height="22.2834" rx="11.1417" transform="rotate(-15 18.4473 85.417)" fill="#141414"/>
-<rect x="78.4385" y="40.7686" width="45.9252" height="19.2245" rx="9.61224" transform="rotate(60 78.4385 40.7686)" fill="#141414"/>
+<rect x="78.4385" y="40.7676" width="45.9252" height="19.2245" rx="9.61224" transform="rotate(60 78.4385 40.7676)" fill="#141414"/>
 <defs>
 <linearGradient id="paint0_linear_193_3155" x1="67" y1="-29" x2="28" y2="161.5" gradientUnits="userSpaceOnUse">
-<stop stop-color="#DDD5FF"/>
-<stop offset="1" stop-color="#7064DA"/>
+<stop stop-color="#8EC5FF"/>
+<stop offset="1" stop-color="#2B7FFF"/>
 </linearGradient>
 </defs>
 </svg>

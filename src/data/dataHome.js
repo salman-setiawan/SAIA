@@ -98,31 +98,27 @@ const DataHome = {
     flow: [
       {
         head: { en: 'Choose a Plan', id: 'Pilih Paket' },
-        desc: { en: 'Select the plan that fits your needs and budget.', id: 'Pilih paket yang sesuai dengan kebutuhan dan anggaran kamu.' },
+        desc: { en: 'You pick the plan that fits your needs and project goals.', id: 'Anda memilih paket yang cocok dengan kebutuhan dan tujuan bisnis Anda.' },
       },
       {
         head: { en: 'Payment', id: 'Pembayaran' },
-        desc: { en: 'Make payment to start the project.', id: 'Lakukan pembayaran untuk memulai proyek.' },
+        desc: { en: 'Make payment via Online to start the project.', id: 'Lakukan pembayaran secara Online untuk memulai proyek.' },
       },
       {
         head: { en: 'Onboarding and Brief', id: 'Onboarding dan Brief' },
-        desc: { en: 'A project manager guides you through onboarding and collects your project brief.', id: 'Project manager akan membantu onboarding dan mengumpulkan brief kebutuhan kamu.' },
+        desc: { en: 'You fill in a simple brief. We understand your goals, users, and project scope.', id: 'Anda mengisi brief singkat. Kami memahami tujuan, target user, dan ruang lingkup proyek Anda.' },
       },
       {
-        head: { en: 'Designer Assignment', id: 'Penugasan Desainer' },
-        desc: { en: 'A designer is assigned after we review your brief.', id: 'Seorang desainer akan ditugaskan setelah brief kamu dipelajari.' },
+        head: { en: 'Design and Revision', id: 'Desain dan Revisi' },
+        desc: { en: 'Our team will create the UI/UX design. You review and refine it until it matches your expectations.', id: 'Tim kami akan membuat desain UI/UX. Anda meninjau dan memberikan feedback sampai sesuai dengan kebutuhan Anda.' },
       },
       {
-        head: { en: 'Task Creation and Submission', id: 'Pengerjaan dan Pengiriman' },
-        desc: { en: 'Designer submits the work. You review and request revisions if needed.', id: 'Desainer mengirimkan hasil kerja. Kamu bisa review dan ajukan revisi jika diperlukan.' },
+        head: { en: 'Development and Deployment.', id: 'Pengembangan dan Deployment.' },
+        desc: { en: 'Our team will build the product and deploy your product to production. We ensure everything works smoothly.', id: 'Tim kami akan membangun produk sesuai desain final dan deploy produk ke server produksi. Kami juga memastikan semuanya berjalan dengan baik.' },
       },
       {
-        head: { en: 'Deployment', id: 'Deployment' },
-        desc: { en: 'Once approved, our developer handles implementation and deployment.', id: 'Setelah disetujui, developer kami mengerjakan implementasi dan deployment.' },
-      },
-      {
-        head: { en: 'Task Completion', id: 'Selesai' },
-        desc: { en: 'The project is complete once everything is delivered and approved.', id: 'Proyek selesai ketika semuanya sudah diserahkan dan disetujui.' },
+        head: { en: 'Project Complete', id: 'Proyek Selesai' },
+        desc: { en: 'The project is complete once everything meets your approval.', id: 'Proyek selesai setelah semua hasil sesuai dan Anda menyetujuinya.' },
       },
     ],
   },

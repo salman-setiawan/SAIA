@@ -37,12 +37,12 @@ const Home = () => {
         <div className="flex flex-col gap-y-3">
           <div className={`${textHeading1} max-w-[360px] md:max-w-full leading-11`}>
             {language === "en" ? (
-              <>Want to <span className="bg-gradient-to-r from-[#CAC8FF] to-[#7A76FD] bg-clip-text text-transparent">
+              <>Want to <span className="bg-gradient-to-r from-blue-300 to-blue-500 bg-clip-text text-transparent">
                 <TypingText words={words[language]} />
               </span>
               <span className="block">your business?</span></>
             ) : (
-              <>Ingin <span className="bg-gradient-to-r from-[#CAC8FF] to-[#7A76FD] bg-clip-text text-transparent">
+              <>Ingin <span className="bg-gradient-to-r from-blue-300 to-blue-500 bg-clip-text text-transparent">
                 <TypingText words={words[language]} />
               </span>
               <span className="block">bisnis kamu?</span></>
@@ -77,8 +77,8 @@ const Home = () => {
 
       {/* Feature Section */}
       <div className="flex flex-col gap-y-6 w-full lg:w-[980px] py-10 px-5">
-        <div className="flex flex-col">
-          <div className={`${textHeading2} md:text-center mb-1`}>
+        <div className="flex flex-col gap-y-1">
+          <div className={`${textHeading2} md:text-center`}>
             {DataHome.featureSection.head[language]}
           </div>
           <div className={`${textRegular} text-justify md:text-center ${textSemi}`}>
@@ -101,7 +101,7 @@ const Home = () => {
       {/* Benefit Section */}
       <div className="flex flex-col gap-y-6 w-full lg:w-[980px] py-16 px-5">
         <div className="flex flex-col gap-y-1">
-          <div className={`${textHeading2} md:text-center mb-1`}>
+          <div className={`${textHeading2} md:text-center`}>
             {DataHome.benefitSection.head[language]}
           </div>
           <div className={`${textRegular} text-justify md:text-center ${textSemi}`}>
@@ -122,38 +122,30 @@ const Home = () => {
       </div>
 
       {/* Userflow Section */}
-      <div className="flex flex-col gap-y-6 w-full py-16">
-        <div className="flex flex-col gap-y-1 w-full lg:w-[980px] px-5 mx-auto">
-          <div className={`${textHeading2} md:text-center mb-1`}>
-            {DataHome.clientflowSection.head[language]}
-          </div>
-          <div className={`${textRegular} text-justify md:text-center ${textSemi}`}>
-            {DataHome.clientflowSection.head[language]}
-          </div>
+      <div className="flex flex-col gap-y-6 w-full py-16 w-full lg:w-[980px] px-5 mx-auto">
+        <div className={`${textHeading2} md:text-center`}>
+          {DataHome.clientflowSection.head[language]}
         </div>
-
-        <div className="w-full bg-[#282828] pt-6 pb-2">
-          <div className="flex gap-x-4 px-5 pb-6 overflow-x-auto w-full lg:w-[980px] mx-auto">
-            {DataHome.clientflowSection.flow.map((flow, index) => (
-              <CardUserflow
-                key={index}
-                num={index + 1}
-                label={flow.head[language]}
-                desc={flow.desc[language]}
-              />
-            ))}
-          </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5">
+          {DataHome.clientflowSection.flow.map((flow, index) => (
+            <CardUserflow
+              key={index}
+              index={index}
+              num={index + 1}
+              label={flow.head[language]}
+              desc={flow.desc[language]}
+            />
+          ))}
         </div>
       </div>
 
       {/* Pricing Section */}
       <div className="flex flex-col gap-y-6 w-full lg:w-[980px] py-8 px-5">
-
         <div className="flex flex-col gap-y-4">
           <div className={`${textHeading2} md:text-center mb-1`}>
             {DataHome.pricingSection.head[language]}
           </div>
-
+          {/* Service Button */}
           <div className="flex flex-wrap gap-2 md:justify-center">
             {services.map(service => (
               <Button
@@ -167,7 +159,6 @@ const Home = () => {
             ))}
           </div>
         </div>
-
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 justify-center">
           {selected.packages.map((p, index) => (
             <CardPricing
