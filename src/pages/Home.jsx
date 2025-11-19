@@ -10,6 +10,7 @@ import DataHome from '../data/dataHome';
 import TypingText from '../motion/TypingText';
 import ParallaxWithModel from '../motion/ParallaxWithModel';
 import Navigation from '../components/Navigation';
+import Footer from '../components/Footer';
 
 const Home = () => {
   const { language } = useLanguage();
@@ -195,6 +196,9 @@ const Home = () => {
           <Button label={DataHome.ctaSection.cta[0][language]} width="w-fit" />
         </div>
       </div>
+
+      {/* Footer Section */}
+      <Footer />
       <div className={`${textMicro} ${textSemi} py-3`}>Avelora @ 2025. All right reserved.</div>
     </div>
   );

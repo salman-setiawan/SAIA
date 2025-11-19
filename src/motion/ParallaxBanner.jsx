@@ -1,21 +1,19 @@
 import React from "react";
 
-const ParallaxBanner = ({ src, height, speed }) => {
+const ParallaxBanner = ({ src, height, speed, pospx, pos }) => {
   const ref = React.useRef(null);
 
   React.useEffect(() => {
     const handleScroll = () => {
       if (!ref.current) return;
-
       const offset = window.scrollY * speed;
-
-      // Background bergerak ke ATAS, bukan ke bawah
-      ref.current.style.backgroundPosition = `center calc(0px - ${offset}px)`;
+      ref.current.style.backgroundPosition = `center calc(${pospx} ${pos} ${offset}px)`;
     };
 
     window.addEventListener("scroll", handleScroll);
     handleScroll();
     return () => window.removeEventListener("scroll", handleScroll);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [speed]);
 
   return (
