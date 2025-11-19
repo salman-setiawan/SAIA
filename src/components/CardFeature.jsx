@@ -6,7 +6,7 @@ const CardFeature = ({label, desc, index}) => {
     switch(index) {
       case 0: // Landing Page
         return (
-          <div className="relative h-40 w-full rounded-xl bg-gradient-to-tr from-sky-500/10 via-sky-400/5 to-transparent border border-sky-500/20 overflow-hidden">
+          <div className="relative h-40 w-full rounded-md bg-gradient-to-tr from-sky-500/10 via-sky-400/5 to-transparent overflow-hidden">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_#0ea5e980,_transparent_55%)] opacity-20"></div>
             <div className="absolute h-40 inset-x-4 top-4 rounded-lg border border-neutral-700/80 bg-neutral-900/90 shadow-sm">
               <div className="flex items-center justify-between border-b border-neutral-800/80 px-3 py-1.5">
@@ -31,7 +31,7 @@ const CardFeature = ({label, desc, index}) => {
         );
       case 1: // Company Profile Website
         return (
-          <div className="relative h-40 w-full rounded-xl bg-gradient-to-tr from-emerald-500/10 via-emerald-400/5 to-transparent border border-emerald-500/20 overflow-hidden">
+          <div className="relative h-40 w-full rounded-md bg-gradient-to-tr from-emerald-500/10 via-emerald-400/5 to-transparent overflow-hidden">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_#22c55e80,_transparent_55%)] opacity-20"></div>
             <div className="absolute h-40 inset-x-4 top-4 rounded-lg border border-neutral-700/80 bg-neutral-900/90 flex overflow-hidden">
               <div className="w-2/5 border-r border-neutral-800/80 p-2.5 space-y-2">
@@ -57,7 +57,7 @@ const CardFeature = ({label, desc, index}) => {
         );
       case 2: // Online Store
         return (
-          <div className="relative h-40 w-full rounded-xl bg-gradient-to-tr from-violet-500/10 via-violet-400/5 to-transparent border border-violet-500/20 overflow-hidden">
+          <div className="relative h-40 w-full rounded-md bg-gradient-to-tr from-violet-500/10 via-violet-400/5 to-transparent overflow-hidden">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_#8b5cf680,_transparent_55%)] opacity-20"></div>
             <div className="absolute h-40 inset-x-4 top-4 rounded-lg border border-neutral-700/80 bg-neutral-900/90 p-2.5 space-y-2">
               <div className="flex items-center justify-between">
@@ -104,7 +104,7 @@ const CardFeature = ({label, desc, index}) => {
         );
       case 3: // Custom Web App
         return (
-          <div className="relative h-40 w-full rounded-xl bg-gradient-to-tr from-cyan-500/10 via-cyan-400/5 to-transparent border border-cyan-500/20 overflow-hidden">
+          <div className="relative h-40 w-full rounded-md bg-gradient-to-tr from-cyan-500/10 via-cyan-400/5 to-transparent overflow-hidden">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_#06b6d480,_transparent_55%)] opacity-20"></div>
             <div className="absolute h-40 inset-x-4 top-4 rounded-lg border border-neutral-700/80 bg-neutral-900/90 p-2.5 space-y-2">
               <div className="flex items-center justify-between gap-2">
@@ -135,7 +135,7 @@ const CardFeature = ({label, desc, index}) => {
         );
       case 4: // ERP System
         return (
-          <div className="relative h-40 w-full rounded-xl bg-gradient-to-tr from-amber-500/10 via-amber-400/5 to-transparent border border-amber-500/20 overflow-hidden">
+          <div className="relative h-40 w-full rounded-md bg-gradient-to-tr from-amber-500/10 via-amber-400/5 to-transparent overflow-hidden">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_#f59e0b80,_transparent_55%)] opacity-20"></div>
             <div className="absolute h-40 inset-x-4 top-4 rounded-lg border border-neutral-700/80 bg-neutral-900/90 p-2.5">
               <div className="grid grid-cols-3 gap-2">
@@ -182,7 +182,7 @@ const CardFeature = ({label, desc, index}) => {
       {renderIllustration()}
       <div className="flex flex-col gap-y-1 pb-1">
         <div className={textHeading3}>{label}</div>
-        <div className={paragraphSmallText}>{desc}</div>
+        <div className={`${paragraphSmallText} pr-4`}>{desc}</div>
       </div>
     </div>
   )
