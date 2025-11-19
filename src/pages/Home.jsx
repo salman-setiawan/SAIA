@@ -1,7 +1,7 @@
 import React from 'react';
 import { useLanguage } from '../components/LanguageContext';
 import CardPricing from '../components/CardPricing';
-import { textHeading1, textHeading2, textMicro, textRegular, textSemi, textSmall } from '../data/uiStyle';
+import { textHeading1, textHeading2, textMicro, textRegular, textSemi } from '../data/uiStyle';
 import Button from '../components/Button';
 import CardBenefit from '../components/CardBenefit';
 import CardFeature from '../components/CardFeature';
@@ -33,7 +33,7 @@ const Home = () => {
       <Navigation />
 
       {/* Hero Section */}
-      <div className="flex flex-col gap-y-6 w-full lg:w-[980px] pt-20 pb-10 px-5">
+      <div className="flex flex-col gap-y-6 w-full lg:w-[980px] pt-20 pb-8 px-5">
         <div className="flex flex-col gap-y-3">
           <div className={`${textHeading1} max-w-[360px] md:max-w-full leading-11`}>
             {language === "en" ? (
@@ -60,11 +60,11 @@ const Home = () => {
           ))}
         </div>
 
-        <div className="flex flex-row gap-x-8">
+        <div className="flex flex-row gap-x-8 pt-1">
           {DataHome.indicatorSection.map((item, index) => (
-            <div key={index} className='max-w-[110px] sm:max-w-full'>
+            <div key={index}>
               <div className={textHeading2}>{item.indicator}</div>
-              <div className={`${textSemi} ${textSmall} font-medium`}>
+              <div className={`${textSemi} text-[13px] lg:text-[14px] font-medium`}>
                 {item.desc[language]}
               </div>
             </div>
@@ -78,7 +78,7 @@ const Home = () => {
       {/* Feature Section */}
       <div className="flex flex-col gap-y-6 w-full lg:w-[980px] py-10 px-5">
         <div className="flex flex-col">
-          <div className={`${textHeading2} md:text-center`}>
+          <div className={`${textHeading2} md:text-center mb-1`}>
             {DataHome.featureSection.head[language]}
           </div>
           <div className={`${textRegular} text-justify md:text-center ${textSemi}`}>
@@ -90,6 +90,7 @@ const Home = () => {
           {DataHome.featureSection.feature.map((f, index) => (
             <CardFeature
               key={index}
+              index={index}
               label={f.head[language]}
               desc={f.desc[language]}
             />
@@ -100,7 +101,7 @@ const Home = () => {
       {/* Benefit Section */}
       <div className="flex flex-col gap-y-6 w-full lg:w-[980px] py-16 px-5">
         <div className="flex flex-col gap-y-1">
-          <div className={`${textHeading2} md:text-center`}>
+          <div className={`${textHeading2} md:text-center mb-1`}>
             {DataHome.benefitSection.head[language]}
           </div>
           <div className={`${textRegular} text-justify md:text-center ${textSemi}`}>
@@ -123,7 +124,7 @@ const Home = () => {
       {/* Userflow Section */}
       <div className="flex flex-col gap-y-6 w-full py-16">
         <div className="flex flex-col gap-y-1 w-full lg:w-[980px] px-5 mx-auto">
-          <div className={`${textHeading2} md:text-center`}>
+          <div className={`${textHeading2} md:text-center mb-1`}>
             {DataHome.clientflowSection.head[language]}
           </div>
           <div className={`${textRegular} text-justify md:text-center ${textSemi}`}>
@@ -131,8 +132,8 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="w-full bg-[#282828] pt-8 pb-2">
-          <div className="flex gap-x-4 px-5 pb-4 overflow-x-auto w-full lg:w-[980px] mx-auto">
+        <div className="w-full bg-[#282828] pt-6 pb-2">
+          <div className="flex gap-x-4 px-5 pb-6 overflow-x-auto w-full lg:w-[980px] mx-auto">
             {DataHome.clientflowSection.flow.map((flow, index) => (
               <CardUserflow
                 key={index}
@@ -149,7 +150,7 @@ const Home = () => {
       <div className="flex flex-col gap-y-6 w-full lg:w-[980px] py-8 px-5">
 
         <div className="flex flex-col gap-y-4">
-          <div className={`${textHeading2} md:text-center`}>
+          <div className={`${textHeading2} md:text-center mb-1`}>
             {DataHome.pricingSection.head[language]}
           </div>
 
@@ -183,7 +184,7 @@ const Home = () => {
       {/* CTA Section */}
       <div className="flex flex-col gap-y-6 w-full justify-center lg:w-[980px] py-16 px-5">
         <div className="flex flex-col gap-y-2">
-          <div className={`${textHeading2} md:text-center`}>
+          <div className={`${textHeading2} md:text-center mb-1`}>
             {DataHome.ctaSection.head[language]}
           </div>
           <div className={`flex text-justify md:text-center md:justify-center w-full  ${textSemi}`}>
