@@ -14,7 +14,7 @@ const ParallaxWithModel = () => {
         height="h-[320px] md:h-[640px]"
         speed={0.4}
         pos='-'
-        pospx='-200px'
+        pospx='-140px'
       />
 
       <div className="absolute inset-0 pointer-events-none flex justify-center items-center top-84 right-19 sm:right-0">
