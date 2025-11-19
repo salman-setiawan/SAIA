@@ -10,7 +10,7 @@ const Footer = () => {
         height="h-[320px]"
         speed={0.3}
         pos='+'
-        pospx='-1600px'
+        pospx='-2050px'
       />
       <div className="absolute top-0 left-0 px-4 pb-1 bg-[#0c0c0c] text-[32px] lg:text-[40px] font-semibold">AVELORA</div>
       <div className="absolute bottom-0 md:right-0 pl-3 pr-6 pt-4 md:pl-2 md:pr-2 md:pt-3 bg-[#0c0c0c] flex flex-col md:flex-row gap-y-4 gap-x-6">

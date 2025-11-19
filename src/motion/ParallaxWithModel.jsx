@@ -12,9 +12,9 @@ const ParallaxWithModel = () => {
       <ParallaxBanner
         src="/landscape.webp"
         height="h-[320px] md:h-[640px]"
-        speed={0.4}
+        speed={0.35}
         pos='-'
-        pospx='-140px'
+        pospx='-110px'
       />
 
       <div className="absolute inset-0 pointer-events-none flex justify-center items-center top-84 right-19 sm:right-0">
