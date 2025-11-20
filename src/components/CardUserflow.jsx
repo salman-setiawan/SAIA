@@ -8,7 +8,7 @@ const CardUserflow = ({label, desc, num, index}) => {
       case 0: // Step 1
         return ( 
           <div className={`relative h-48 w-full rounded-md bg-gradient-to-br from-blue-500/20 via-blue-400/10 to-transparent overflow-hidden`}>
-            <div className="absolute inset-5 flex justify-center lg:justify-start lg:pl-4 items-center">
+            <div className="absolute inset-5 flex justify-center sm:justify-start sm:pl-4 items-center">
               <div className="flex gap-x-3">
                 <div className="relative h-16 w-24 rounded-md bg-gradient-to-tl from-blue-800 to-blue-500 px-3 py-2 font-semibold shadow-lg shadow-black/30 flex items-end">
                 1
@@ -104,7 +104,7 @@ const CardUserflow = ({label, desc, num, index}) => {
       case 3: // Step 4
         return ( 
           <div className={`relative h-48 w-full rounded-md bg-gradient-to-br from-blue-500/20 via-blue-400/10 to-transparent overflow-hidden`}>
-            <div className="absolute inset-4 top-20 lg:w-[320px] flex justify-center items-center">
+            <div className="absolute inset-4 top-20 sm:w-[320px] flex justify-center items-center">
               <div className="relative w-full space-y-1.5">
                 <div className="flex items-center justify-between rounded-md border border-blue-200/10 bg-[#0c0c0c] px-3 py-2 text-xs backdrop-blur">
                   <div className="flex items-center gap-2 text-slate-200">

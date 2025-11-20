@@ -68,10 +68,16 @@ const DataHome = {
       en: 'Who we are',
       id: 'Siapa kami',
     },
-    desc: {
-      en: 'We are a indie team of marketers, designers, and developers with experience helping businesses go digital and scale their growth. You get solutions that match your business needs, a structured workflow, and results you can rely on. The three points below highlight the key reasons many clients choose to work with us.',
-      id: 'Kami adalah tim berisi marketer, designer, dan developer yang berpengalaman membantu bisnis masuk ke dunia digital dan meningkatkan skala pertumbuhan. Kamu mendapatkan solusi yang relevan dengan kebutuhan bisnis, proses kerja yang rapi, serta hasil yang dapat dipertanggungjawabkan. Tiga poin di bawah menunjukkan alasan kuat kenapa banyak klien memilih bekerja sama dengan kami.',
-    },
+    desc: [
+      {
+        en: 'We are a team of marketers, designers, and developers with experience helping businesses go digital and scale their growth.',
+        id: 'Kami adalah tim berisi marketer, designer, dan developer yang berpengalaman membantu bisnis masuk ke dunia digital dan meningkatkan skala pertumbuhan.',
+      },
+      {
+        en: 'With us you will get solutions that match your business needs. The three points below highlight the key reasons why you should work with us.',
+        id: 'Bersama kami anda akan mendapatkan solusi yang relevan dengan kebutuhan bisnis anda. Tiga poin di bawah menunjukkan alasan kuat kenapa anda harus bekerja sama dengan kami.',
+      }, 
+    ],
     benefit: [
       {
         icon: 'verified',

@@ -11,6 +11,7 @@ import TypingText from '../motion/TypingText';
 import ParallaxWithModel from '../motion/ParallaxWithModel';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
+import Models from './Models';
 
 const Home = () => {
   const { language } = useLanguage();
@@ -33,7 +34,7 @@ const Home = () => {
       <Navigation />
 
       {/* Hero Section */}
-      <div className="flex flex-col gap-y-6 w-full lg:w-[980px] pt-20 pb-8 px-5">
+      <div className="flex flex-col gap-y-6 w-full lg:w-[1000px] pt-20 pb-8 px-4">
         <div className="flex flex-col gap-y-3">
           <div className={`${textHeading1} max-w-[360px] md:max-w-full leading-11`}>
             {language === "en" ? (
@@ -76,20 +77,35 @@ const Home = () => {
       <ParallaxWithModel />
 
       {/* About Section */}
-      <div className="flex flex-col gap-y-4 w-full lg:w-[980px] py-16 px-5">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-4">
-          <div className="w-full rounded-md bg-gradient-to-br from-blue-500/18 via-blue-500/8 to-transparent overflow-hidden"></div>
-          <div className="flex flex-col gap-y-1 lg:py-4">
+      <div className="flex flex-col gap-y-4 lg:gap-y-3 w-full lg:w-[1000px] py-8 px-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-4 items-center">
+          {/* Illustration */}
+          <div className="relative w-full min-h-64 max-h-[320px] rounded-md flex justify-center items-center bg-gradient-to-br from-blue-500/18 via-blue-500/8 to-transparent overflow-hidden">
+            <div className="relative flex justify-center items-center z-10 max-w-[437px] max-h-[256px]">
+              <div className="absolute top-12 left-24 py-1 px-3 rounded bg-[#0c0c0c]/50 backdrop-blur border border-blue-200/12 shadow-xl shadow-black/40">Apps</div>
+              <div className="absolute bottom-8 left-20 py-1 px-3 rounded bg-[#0c0c0c]/50 backdrop-blur border border-blue-200/12 shadow-xl shadow-black/40">Solution</div>
+              <div className="absolute -top-3 right-28 py-1 px-3 rounded bg-[#0c0c0c]/50 backdrop-blur border border-blue-200/12 shadow-xl shadow-black/40">Vision</div>
+              <div className="absolute bottom-16 right-16 py-1 px-3 rounded bg-[#0c0c0c]/50 backdrop-blur border border-blue-200/12 shadow-xl shadow-black/40">Idea</div>
+              <div className="absolute top-16 right-8 py-1 px-3 rounded bg-[#0c0c0c]/50 backdrop-blur border border-blue-200/12 shadow-xl shadow-black/40">Problem</div>
+            </div>
+            <div className="absolute inset-5 flex justify-center items-center gap-x-6 z-50">
+              <img src="/vite.svg" alt="" className="h-16 -rotate-16 shadow-xl shadow-black/60" />
+            </div>
+          </div>
+          {/* Info */}
+          <div className="flex flex-col gap-y-1.5">
             <div className={`${textHeading2}`}>
               {DataHome.aboutSection.head[language]}
             </div>
-            <div className={`${textRegular} ${textSemi} text-justify`}>
-              {DataHome.aboutSection.desc[language]}
-            </div>
+            {DataHome.aboutSection.desc.map((item, index) => (
+              <div key={index} className="text-[16px] text-white/60 text-justify mb-1">
+                {item[language]}
+              </div>
+            ))}
           </div>
         </div>
         {/* Benefit Section */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
           {DataHome.aboutSection.benefit.map((b, index) => (
             <CardBenefit
               key={index}
@@ -102,7 +118,7 @@ const Home = () => {
       </div>
 
       {/* Feature Section */}
-      <div className="flex flex-col gap-y-6 w-full lg:w-[980px] py-10 px-5">
+      <div className="flex flex-col gap-y-6 w-full lg:w-[1000px] py-8 px-4">
         <div className="flex flex-col gap-y-1">
           <div className={`${textHeading2} md:text-center`}>
             {DataHome.featureSection.head[language]}
@@ -124,11 +140,11 @@ const Home = () => {
       </div>
 
       {/* Userflow Section */}
-      <div className="flex flex-col gap-y-6 w-full py-16 w-full lg:w-[980px] px-5 mx-auto">
+      <div className="flex flex-col gap-y-6 w-full py-8 w-full lg:w-[1000px] px-4 mx-auto">
         <div className={`${textHeading2} md:text-center`}>
           {DataHome.clientflowSection.head[language]}
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2.5">
           {DataHome.clientflowSection.flow.map((flow, index) => (
             <CardUserflow
               key={index}
@@ -142,7 +158,7 @@ const Home = () => {
       </div>
 
       {/* Pricing Section */}
-      <div className="flex flex-col gap-y-10 w-full lg:w-[980px] py-8 px-5">
+      <div className="flex flex-col gap-y-12 w-full lg:w-[1000px] py-8 px-4">
         <div className="flex flex-col gap-y-4">
           <div className={`${textHeading2} md:text-center mb-1`}>
             {DataHome.pricingSection.head[language]}
@@ -161,7 +177,7 @@ const Home = () => {
             ))}
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 justify-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 justify-center">
           {selected.packages.map((p, index) => (
             <CardPricing
               key={index}
@@ -176,19 +192,33 @@ const Home = () => {
       </div>
 
       {/* CTA Section */}
-      <div className="flex flex-col gap-y-6 w-full justify-center lg:w-[980px] py-16 px-5">
-        <div className="flex flex-col gap-y-2">
-          <div className={`${textHeading2} md:text-center mb-1`}>
-            {DataHome.ctaSection.head[language]}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-8 xl:gap-x-12 w-full lg:w-[1000px] pt-16 pb-20 px-4 items-center">
+      <div className="relative md:hidden h-64 overflow-hidden">
+        <div className="absolute inset-0 z-10 bg-gradient-to-b from-transparent to-[#0c0c0c]"></div>
+        <div className="absolute inset-x-1 -top-22">
+          <div className="scale-[0.8] rounded-2xl overflow-hidden">
+            <Models />
           </div>
-          <div className={`flex text-justify md:text-center md:justify-center w-full  ${textSemi}`}>
-            <div className="md:max-w-[715px]">
+        </div>
+      </div>
+        <div className="flex flex-col gap-y-8">
+          <div className="space-y-2">
+            <div className={`${textHeading2}`}>
+              {DataHome.ctaSection.head[language]}
+            </div>
+            <div className={`text-justify w-full ${textSemi}`}>
               {DataHome.ctaSection.desc[language]}
             </div>
           </div>
-        </div>
-        <div className="flex md:justify-center">
           <Button label={DataHome.ctaSection.cta[0][language]} width="w-fit" />
+        </div>
+        <div className="relative hidden md:flex h-64 overflow-hidden">
+          <div className="absolute inset-0 z-10 bg-gradient-to-b from-transparent to-[#0c0c0c]"></div>
+          <div className="absolute -top-23 -left-35">
+            <div className="scale-[0.8] w-[1440px] rounded-2xl overflow-hidden">
+              <Models />
+            </div>
+          </div>
         </div>
       </div>
 
