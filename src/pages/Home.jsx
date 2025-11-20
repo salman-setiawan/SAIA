@@ -38,12 +38,12 @@ const Home = () => {
           <div className={`${textHeading1} max-w-[360px] md:max-w-full leading-11`}>
             {language === "en" ? (
               <>Want to <span className="bg-gradient-to-r from-blue-300 to-blue-500 bg-clip-text text-transparent">
-                <TypingText words={words[language]} />
+                <TypingText words={words[language] || words.en} />
               </span>
               <span className="block">your business?</span></>
             ) : (
               <>Ingin <span className="bg-gradient-to-r from-blue-300 to-blue-500 bg-clip-text text-transparent">
-                <TypingText words={words[language]} />
+                <TypingText words={words[language] || words.id} />
               </span>
               <span className="block">bisnis kamu?</span></>
             )}
@@ -60,7 +60,7 @@ const Home = () => {
           ))}
         </div>
 
-        <div className="flex flex-row gap-x-8 pt-1">
+        <div className="flex flex-row gap-x-8 lg:gap-x-16 pt-1">
           {DataHome.indicatorSection.map((item, index) => (
             <div key={index}>
               <div className={textHeading2}>{item.indicator}</div>
@@ -140,7 +140,7 @@ const Home = () => {
       </div>
 
       {/* Pricing Section */}
-      <div className="flex flex-col gap-y-6 w-full lg:w-[980px] py-8 px-5">
+      <div className="flex flex-col gap-y-10 w-full lg:w-[980px] py-8 px-5">
         <div className="flex flex-col gap-y-4">
           <div className={`${textHeading2} md:text-center mb-1`}>
             {DataHome.pricingSection.head[language]}
@@ -163,6 +163,7 @@ const Home = () => {
           {selected.packages.map((p, index) => (
             <CardPricing
               key={index}
+              deal={p.deal?.[language]}
               price={typeof p.price === 'string' ? p.price : p.price[language]}
               desc={p.desc[language]}
               benefit={p.benefit}

@@ -2,7 +2,7 @@ const DataHome = {
   heroSection: {
     desc: {
       en: 'We help you build a fast and clear website that attracts customers. You get a professional company profile, a conversion-focused landing page, and an easy-to-use online store.',
-      id: 'Kami bantu kamu punya website yang cepat, jelas, dan siap menarik pelanggan. Kamu bisa dapat company profile yang profesional, landing page yang fokus pada konversi, dan toko online yang mudah digunakan.',
+      id: 'Kami bantu anda punya website yang cepat, jelas, dan siap menarik pelanggan. anda bisa dapat company profile yang profesional, landing page yang fokus pada konversi, dan toko online yang mudah digunakan.',
     },
     cta: [
       { en: 'Consult via Whatsapp', id: 'Konsultasi via Whatsapp' },
@@ -43,7 +43,7 @@ const DataHome = {
       {
         img: '',
         head: { en: 'Company Profile Website', id: 'Website Company Profile' },
-        desc: { en: 'Professional websites that strengthen your brand and credibility.', id: 'Website profesional yang memperkuat branding dan kredibilitas bisnis kamu.' },
+        desc: { en: 'Professional websites that strengthen your brand and credibility.', id: 'Website profesional yang memperkuat branding dan kredibilitas bisnis anda.' },
       },
       {
         img: '',
@@ -57,8 +57,8 @@ const DataHome = {
       },
       {
         img: '',
-        head: { en: 'ERP System', id: 'Sistem ERP' },
-        desc: { en: 'Integrated systems that help manage business workflows efficiently.', id: 'Sistem terintegrasi untuk mengelola alur kerja bisnis dengan lebih efisien.' },
+        head: { en: 'And many more..', id: 'Dan masih banyak lagi..' },
+        desc: { en: 'We can help you build any web or app idea beyond our standard product features. You bring the concept. We develop it to fit your needs.', id: 'Kami siap membantu mewujudkan web atau aplikasi di luar fitur standar produk kami. Anda bawa idenya. Kami kembangkan sampai sesuai kebutuhan Anda.' },
       },
     ],
   },
@@ -76,7 +76,7 @@ const DataHome = {
       {
         icon: 'verified',
         head: { en: 'Guaranteed Quality', id: 'Kualitas Terjamin' },
-        desc: { en: 'Your website is built with professional standards. Fast, mobile friendly, and SEO optimized.', id: 'Website kamu akan dirancang dengan standar profesional. Cepat, mobile-friendly, dan SEO-ready.' },
+        desc: { en: 'Your website is built with professional standards. Fast, mobile friendly, and SEO optimized.', id: 'Website anda akan dirancang dengan standar profesional. Cepat, mobile-friendly, dan SEO-ready.' },
       },
       {
         icon: 'edit_note',
@@ -90,6 +90,7 @@ const DataHome = {
       },
     ],
   },
+
   clientflowSection: {
     head: {
       en: 'Here’s how to get started',
@@ -122,6 +123,7 @@ const DataHome = {
       },
     ],
   },
+
   pricingSection: {
     head: {
       en: 'Our Pricing',
@@ -129,11 +131,15 @@ const DataHome = {
     },
     services: [
       {
-        id: 4,
+        id: 3,
         label: { en: 'Landing Page', id: 'Landing Page' },
         packages: [
           {
             package: 1,
+            deal: {
+              en: 'Best Deal!',
+              id: 'Penawaran Terbaik'
+            },
             price: 'Rp 1.500.000',
             desc: {
               en: 'Simple landing page with clean layout for small promotions.',
@@ -180,11 +186,15 @@ const DataHome = {
         ]
       },
       {
-        id: 5,
+        id: 4,
         label: { en: 'Company Profile Website', id: 'Website Company Profile' },
         packages: [
           {
             package: 1,
+            deal: {
+              en: 'Best Deal!',
+              id: 'Penawaran Terbaik'
+            },
             price: 'Rp 3.500.000',
             desc: {
               en: 'Essential company profile for small businesses.',
@@ -236,6 +246,10 @@ const DataHome = {
         packages: [
           {
             package: 1,
+            deal: {
+              en: 'Best Deal!',
+              id: 'Penawaran Terbaik'
+            },
             price: 'Rp 4.500.000',
             desc: {
               en: 'Starter ecommerce with simple product catalog.',
@@ -287,6 +301,10 @@ const DataHome = {
         packages: [
           {
             package: 1,
+            deal: {
+              en: 'Best Deal!',
+              id: 'Penawaran Terbaik'
+            },
             price: 'Rp 8.000.000',
             desc: {
               en: 'Starter custom app with basic modules.',
@@ -332,60 +350,65 @@ const DataHome = {
           }
         ]
       },
-      {
-        id: 3,
-        label: { en: 'ERP System', id: 'Sistem ERP' },
-        packages: [
-          {
-            package: 1,
-            price: 'Rp 12.000.000',
-            desc: {
-              en: 'Entry level ERP modules for small operations.',
-              id: 'Modul ERP dasar untuk operasional kecil.'
-            },
-            benefit: [
-              { en: 'Inventory module', id: 'Modul inventory' },
-              { en: 'Sales module', id: 'Modul penjualan' },
-              { en: 'Basic reporting', id: 'Laporan dasar' },
-              { en: '2 revisions', id: '2 kali revisi' }
-            ],
-            cta: { en: 'Order Now', id: 'Order Sekarang' }
-          },
-          {
-            package: 2,
-            price: 'Rp 25.000.000',
-            desc: {
-              en: 'Multi-module ERP with automation.',
-              id: 'ERP multi modul dengan automasi.'
-            },
-            benefit: [
-              { en: 'Inventory + Sales + HR', id: 'Inventory, Sales, HR' },
-              { en: 'Workflow automation', id: 'Otomasi workflow' },
-              { en: 'Advanced reporting', id: 'Laporan lanjutan' },
-              { en: '3 revisions', id: '3 kali revisi' }
-            ],
-            cta: { en: 'Order Now', id: 'Order Sekarang' }
-          },
-          {
-            package: 3,
-            price: { en: 'Contact Us', id: 'Hubungi Kami' },
-            desc: {
-              en: 'Full ERP system built for large enterprises.',
-              id: 'Sistem ERP penuh untuk perusahaan besar.'
-            },
-            benefit: [
-              { en: 'Custom modules', id: 'Modul kustom' },
-              { en: 'Data migration', id: 'Migrasi data' },
-              { en: 'Integration with existing systems', id: 'Integrasi sistem existing' },
-              { en: 'On-site support', id: 'Dukungan on-site' }
-            ],
-            cta: { en: 'Order Now', id: 'Order Sekarang' }
-          }
-        ]
-      }
+      // {
+      //   id: 3,
+      //   label: { en: 'ERP System', id: 'Sistem ERP' },
+      //   packages: [
+      //     {
+      //       package: 1,
+      //       deal: {
+      //         en: 'Best Deal!',
+      //         id: 'Penawaran Terbaik'
+      //       },
+      //       price: 'Rp 12.000.000',
+      //       desc: {
+      //         en: 'Entry level ERP modules for small operations.',
+      //         id: 'Modul ERP dasar untuk operasional kecil.'
+      //       },
+      //       benefit: [
+      //         { en: 'Inventory module', id: 'Modul inventory' },
+      //         { en: 'Sales module', id: 'Modul penjualan' },
+      //         { en: 'Basic reporting', id: 'Laporan dasar' },
+      //         { en: '2 revisions', id: '2 kali revisi' }
+      //       ],
+      //       cta: { en: 'Order Now', id: 'Order Sekarang' }
+      //     },
+      //     {
+      //       package: 2,
+      //       price: 'Rp 25.000.000',
+      //       desc: {
+      //         en: 'Multi-module ERP with automation.',
+      //         id: 'ERP multi modul dengan automasi.'
+      //       },
+      //       benefit: [
+      //         { en: 'Inventory + Sales + HR', id: 'Inventory, Sales, HR' },
+      //         { en: 'Workflow automation', id: 'Otomasi workflow' },
+      //         { en: 'Advanced reporting', id: 'Laporan lanjutan' },
+      //         { en: '3 revisions', id: '3 kali revisi' }
+      //       ],
+      //       cta: { en: 'Order Now', id: 'Order Sekarang' }
+      //     },
+      //     {
+      //       package: 3,
+      //       price: { en: 'Contact Us', id: 'Hubungi Kami' },
+      //       desc: {
+      //         en: 'Full ERP system built for large enterprises.',
+      //         id: 'Sistem ERP penuh untuk perusahaan besar.'
+      //       },
+      //       benefit: [
+      //         { en: 'Custom modules', id: 'Modul kustom' },
+      //         { en: 'Data migration', id: 'Migrasi data' },
+      //         { en: 'Integration with existing systems', id: 'Integrasi sistem existing' },
+      //         { en: 'On-site support', id: 'Dukungan on-site' }
+      //       ],
+      //       cta: { en: 'Order Now', id: 'Order Sekarang' }
+      //     }
+      //   ]
+      // }
   
     ]
   },  
+
   ctaSection: {
     head: {
       en: 'Ready to Build a Professional Website for Your Business?',
@@ -393,7 +416,7 @@ const DataHome = {
     },
     desc: {
       en: 'We help you create a convincing, fast, and ready-to-sell website. Company profile, landing page, or online store. All done easily.',
-      id: 'Kami siap bantu kamu punya website yang tampil meyakinkan, cepat, dan siap promosi. Mulai dari company profile, landing page, sampai toko online semua bisa kamu dapatkan dengan mudah dan tanpa ribet.',
+      id: 'Kami siap bantu anda punya website yang tampil meyakinkan, cepat, dan siap promosi. Mulai dari company profile, landing page, sampai toko online semua bisa anda dapatkan dengan mudah dan tanpa ribet.',
     },
     cta: [
       { en: 'Contact Us via Whatsapp', id: 'Hubungi Kami via Whatsapp' },
