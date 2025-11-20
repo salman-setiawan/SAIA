@@ -75,6 +75,32 @@ const Home = () => {
       {/* Banner */}
       <ParallaxWithModel />
 
+      {/* About Section */}
+      <div className="flex flex-col gap-y-4 w-full lg:w-[980px] py-16 px-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-4">
+          <div className="w-full rounded-md bg-gradient-to-br from-blue-500/18 via-blue-500/8 to-transparent overflow-hidden"></div>
+          <div className="flex flex-col gap-y-1 lg:py-4">
+            <div className={`${textHeading2}`}>
+              {DataHome.aboutSection.head[language]}
+            </div>
+            <div className={`${textRegular} ${textSemi} text-justify`}>
+              {DataHome.aboutSection.desc[language]}
+            </div>
+          </div>
+        </div>
+        {/* Benefit Section */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+          {DataHome.aboutSection.benefit.map((b, index) => (
+            <CardBenefit
+              key={index}
+              icon={b.icon}
+              label={b.head[language]}
+              desc={b.desc[language]}
+            />
+          ))}
+        </div>
+      </div>
+
       {/* Feature Section */}
       <div className="flex flex-col gap-y-6 w-full lg:w-[980px] py-10 px-5">
         <div className="flex flex-col gap-y-1">
@@ -85,7 +111,6 @@ const Home = () => {
             {DataHome.featureSection.desc[language]}
           </div>
         </div>
-
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
           {DataHome.featureSection.feature.map((f, index) => (
             <CardFeature
@@ -93,29 +118,6 @@ const Home = () => {
               index={index}
               label={f.head[language]}
               desc={f.desc[language]}
-            />
-          ))}
-        </div>
-      </div>
-
-      {/* Benefit Section */}
-      <div className="flex flex-col gap-y-6 w-full lg:w-[980px] py-16 px-5">
-        <div className="flex flex-col gap-y-1">
-          <div className={`${textHeading2} md:text-center`}>
-            {DataHome.benefitSection.head[language]}
-          </div>
-          <div className={`${textRegular} text-justify md:text-center ${textSemi}`}>
-            {DataHome.benefitSection.desc[language]}
-          </div>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
-          {DataHome.benefitSection.benefit.map((b, index) => (
-            <CardBenefit
-              key={index}
-              icon={b.icon}
-              label={b.head[language]}
-              desc={b.desc[language]}
             />
           ))}
         </div>

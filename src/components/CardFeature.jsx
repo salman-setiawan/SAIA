@@ -6,7 +6,7 @@ const CardFeature = ({label, desc, index}) => {
     switch(index) {
       case 0: // Landing Page
         return (
-          <div className="relative h-46 w-full rounded-md bg-gradient-to-br from-blue-500/60 via-blue-500/15 to-transparent overflow-hidden">
+          <div className="relative h-46 w-full rounded-md bg-gradient-to-br from-blue-600/30 via-blue-500/8 to-transparent overflow-hidden">
             <div className="absolute h-46 sm:w-[300px] inset-x-16 sm:inset-x-5 top-5 rounded-lg border border-white/20 bg-[#0c0c0c]/55 backdrop-blur shadow-sm">
               <div className="flex items-center justify-between px-3 py-1.5">
                 <span className="h-2.5 w-2.5 rounded-full bg-blue-300"></span>
@@ -37,7 +37,7 @@ const CardFeature = ({label, desc, index}) => {
         );
       case 1: // Company Profile Website
         return (
-          <div className="relative h-46 w-full rounded-md bg-gradient-to-br from-blue-500/60 via-blue-500/15 to-transparent overflow-hidden">
+          <div className="relative h-46 w-full rounded-md bg-gradient-to-br from-blue-600/30 via-blue-500/8 to-transparent overflow-hidden">
             
             <div className="absolute h-46 sm:w-[300px] inset-x-16 sm:inset-x-5 top-5 rounded-lg border border-white/20 bg-[#0c0c0c]/55 backdrop-blur flex overflow-hidden">
               <div className="w-2/5 border-r border-neutral-800 p-2.5 space-y-2">
@@ -67,7 +67,7 @@ const CardFeature = ({label, desc, index}) => {
         );
       case 2: // Online Store
         return (
-          <div className="relative h-46 w-full rounded-md bg-gradient-to-br from-blue-500/60 via-blue-500/15 to-transparent overflow-hidden">
+          <div className="relative h-46 w-full rounded-md bg-gradient-to-br from-blue-600/30 via-blue-500/8 to-transparent overflow-hidden">
             
             <div className="absolute h-46 sm:w-[300px] inset-x-16 sm:inset-x-5 top-5 rounded-lg border border-white/20 bg-[#0c0c0c]/55 backdrop-blur p-2.5 space-y-2">
               <div className="flex items-center justify-between">
@@ -115,7 +115,7 @@ const CardFeature = ({label, desc, index}) => {
         );
       case 3: // Custom Web App
         return (
-          <div className="relative h-46 w-full rounded-md bg-gradient-to-br from-blue-500/60 via-blue-500/15 to-transparent overflow-hidden">
+          <div className="relative h-46 w-full rounded-md bg-gradient-to-br from-blue-600/30 via-blue-500/8 to-transparent overflow-hidden">
             
             <div className="absolute h-46 sm:w-[300px] inset-x-16 sm:inset-x-5 top-5 rounded-lg border border-white/20 bg-[#0c0c0c]/55 backdrop-blur p-2.5 space-y-2">
               <div className="flex items-center justify-between gap-2">
@@ -149,7 +149,7 @@ const CardFeature = ({label, desc, index}) => {
         );
       case 4: // ERP System
         return (
-          <div className="relative h-46 w-full rounded-md bg-gradient-to-br from-blue-500/60 via-blue-500/15 to-transparent overflow-hidden">
+          <div className="relative h-46 w-full rounded-md bg-gradient-to-br from-blue-600/30 via-blue-500/8 to-transparent overflow-hidden">
             
             <div className="absolute h-46 sm:w-[300px] inset-x-16 sm:inset-x-5 top-5 rounded-lg border border-white/20 bg-[#0c0c0c]/55 backdrop-blur p-2.5">
               <div className="grid grid-cols-3 gap-2">
