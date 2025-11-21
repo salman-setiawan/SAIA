@@ -34,8 +34,8 @@ const Home = () => {
       <Navigation />
 
       {/* Hero Section */}
-      <div className="flex flex-col gap-y-6 w-full lg:w-[1000px] pt-20 pb-8 px-4">
-        <div className="flex flex-col gap-y-3">
+      <div className="flex flex-col gap-y-6 w-full lg:max-w-[1140px] pt-18 pb-8 px-4">
+        <div className="flex flex-col gap-y-4">
           <div className={`${textHeading1} max-w-[360px] md:max-w-full leading-11`}>
             {language === "en" ? (
               <>Want to <span className="bg-gradient-to-r from-blue-300 to-blue-500 bg-clip-text text-transparent">
@@ -77,8 +77,8 @@ const Home = () => {
       <ParallaxWithModel />
 
       {/* About Section */}
-      <div className="flex flex-col gap-y-4 lg:gap-y-3 w-full lg:w-[1000px] py-8 px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-4 items-center">
+      <div className="flex flex-col gap-y-6 lg:gap-y-4 w-full lg:max-w-[1140px] pt-6 pb-12 px-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
           {/* Illustration */}
           <div className="relative w-full min-h-64 max-h-[320px] rounded-md flex justify-center items-center bg-gradient-to-br from-blue-500/18 via-blue-500/8 to-transparent overflow-hidden">
             <div className="relative flex justify-center items-center z-10 max-w-[437px] max-h-[256px]">
@@ -93,19 +93,19 @@ const Home = () => {
             </div>
           </div>
           {/* Info */}
-          <div className="flex flex-col gap-y-1.5">
+          <div className="flex flex-col gap-y-2">
             <div className={`${textHeading2}`}>
               {DataHome.aboutSection.head[language]}
             </div>
             {DataHome.aboutSection.desc.map((item, index) => (
-              <div key={index} className="text-[16px] text-white/60 text-justify mb-1">
+              <div key={index} className={`${textRegular} text-justify mb-1 ${textSemi}`}>
                 {item[language]}
               </div>
             ))}
           </div>
         </div>
         {/* Benefit Section */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           {DataHome.aboutSection.benefit.map((b, index) => (
             <CardBenefit
               key={index}
@@ -118,7 +118,7 @@ const Home = () => {
       </div>
 
       {/* Feature Section */}
-      <div className="flex flex-col gap-y-6 w-full lg:w-[1000px] py-8 px-4">
+      <div className="flex flex-col gap-y-6 w-full lg:max-w-[1140px] py-12 px-4">
         <div className="flex flex-col gap-y-1">
           <div className={`${textHeading2} md:text-center`}>
             {DataHome.featureSection.head[language]}
@@ -127,7 +127,7 @@ const Home = () => {
             {DataHome.featureSection.desc[language]}
           </div>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           {DataHome.featureSection.feature.map((f, index) => (
             <CardFeature
               key={index}
@@ -140,11 +140,11 @@ const Home = () => {
       </div>
 
       {/* Userflow Section */}
-      <div className="flex flex-col gap-y-6 w-full py-8 w-full lg:w-[1000px] px-4 mx-auto">
+      <div className="flex flex-col gap-y-6 w-full py-12 w-full lg:max-w-[1140px] px-4 mx-auto">
         <div className={`${textHeading2} md:text-center`}>
           {DataHome.clientflowSection.head[language]}
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2.5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           {DataHome.clientflowSection.flow.map((flow, index) => (
             <CardUserflow
               key={index}
@@ -158,13 +158,13 @@ const Home = () => {
       </div>
 
       {/* Pricing Section */}
-      <div className="flex flex-col gap-y-12 w-full lg:w-[1000px] py-8 px-4">
+      <div className="flex flex-col gap-y-14 w-full lg:max-w-[1140px] py-12 px-4">
         <div className="flex flex-col gap-y-4">
           <div className={`${textHeading2} md:text-center mb-1`}>
             {DataHome.pricingSection.head[language]}
           </div>
           {/* Service Button */}
-          <div className="flex flex-wrap gap-2 md:justify-center">
+          <div className="flex flex-wrap gap-3 md:justify-center">
             {services.map(service => (
               <Button
                 key={service.id}
@@ -177,7 +177,7 @@ const Home = () => {
             ))}
           </div>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 justify-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 justify-center">
           {selected.packages.map((p, index) => (
             <CardPricing
               key={index}
@@ -192,7 +192,7 @@ const Home = () => {
       </div>
 
       {/* CTA Section */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-8 xl:gap-x-12 w-full lg:w-[1000px] pt-16 pb-20 px-4 items-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-8 xl:gap-x-12 w-full lg:max-w-[1140px] pt-16 pb-20 px-4 items-center">
       <div className="relative md:hidden h-64 overflow-hidden">
         <div className="absolute inset-0 z-10 bg-gradient-to-b from-transparent to-[#0c0c0c]"></div>
         <div className="absolute inset-x-1 -top-22">

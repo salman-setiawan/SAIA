@@ -104,9 +104,9 @@ const CardUserflow = ({label, desc, num, index}) => {
       case 3: // Step 4
         return ( 
           <div className={`relative h-48 w-full rounded-md bg-gradient-to-br from-blue-500/20 via-blue-400/10 to-transparent overflow-hidden`}>
-            <div className="absolute inset-4 top-20 sm:w-[320px] flex justify-center items-center">
+            <div className="absolute inset-4 top-20 sm:w-[325px] flex justify-center items-center">
               <div className="relative w-full space-y-1.5">
-                <div className="flex items-center justify-between rounded-md border border-blue-200/10 bg-[#0c0c0c] px-3 py-2 text-xs backdrop-blur">
+                <div className="flex items-center justify-between rounded-md border border-blue-200/10 bg-[#0c0c0c]/70 px-3 py-2 text-xs backdrop-blur">
                   <div className="flex items-center gap-2 text-slate-200">
                     Revision Round
                   </div>
@@ -163,9 +163,12 @@ const CardUserflow = ({label, desc, num, index}) => {
   return (
     <div className="flex flex-col gap-3">
       {renderIllustration()}
-      <div className={`flex flex-col gap-y-1 pb-6`}>
-        <div className={textHeading3}>{label}</div>
-        <div className={`${paragraphSmallText} pr-8`}>{desc}</div>
+      <div className="flex gap-x-2.5">
+        <div className="mt-1 hidden xl:block min-w-4 max-h-4 bg-gradient-to-tl from-blue-600 to-blue-300 rounded-full shadow-lg shadow-black/30"></div>
+        <div className={`flex flex-col gap-y-1 pb-6`}>
+          <div className={textHeading3}>{label}</div>
+          <div className={`${paragraphSmallText} pr-8`}>{desc}</div>
+        </div>
       </div>
     </div>
   )
