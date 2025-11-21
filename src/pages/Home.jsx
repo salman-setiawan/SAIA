@@ -81,7 +81,7 @@ const Home = () => {
       <div className="flex flex-col gap-y-6 lg:gap-y-4 w-full lg:max-w-[1140px] pt-6 pb-12 px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
           {/* Illustration */}
-          <div className="relative w-full min-h-64 max-h-[320px] rounded-md flex justify-center items-center bg-gradient-to-br from-blue-500/18 via-blue-500/8 to-transparent overflow-hidden">
+          <div className="relative w-full min-h-64 md:min-h-72 max-h-[320px] rounded-md flex justify-center items-center bg-gradient-to-br from-blue-500/18 via-blue-500/8 to-transparent overflow-hidden">
             <div className="relative flex justify-center items-center z-10 max-w-[437px] max-h-[256px]">
               <div className="absolute top-12 left-24 py-1 px-3 rounded bg-[#0c0c0c]/50 backdrop-blur border border-blue-200/12 shadow-xl shadow-black/40">Apps</div>
               <div className="absolute bottom-8 left-20 py-1 px-3 rounded bg-[#0c0c0c]/50 backdrop-blur border border-blue-200/12 shadow-xl shadow-black/40">Solution</div>
