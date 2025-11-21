@@ -6,6 +6,7 @@ import Button from '../components/Button';
 import CardBenefit from '../components/CardBenefit';
 import CardFeature from '../components/CardFeature';
 import CardUserflow from '../components/CardUserflow';
+import UserflowConnector from '../components/UserflowConnector';
 import DataHome from '../data/dataHome';
 import TypingText from '../motion/TypingText';
 import ParallaxWithModel from '../motion/ParallaxWithModel';
@@ -140,20 +141,27 @@ const Home = () => {
       </div>
 
       {/* Userflow Section */}
-      <div className="flex flex-col gap-y-6 w-full py-12 w-full lg:max-w-[1140px] px-4 mx-auto">
+      <div className="flex flex-col gap-y-6 w-full py-12 px-4 lg:px-0 mx-auto">
         <div className={`${textHeading2} md:text-center`}>
           {DataHome.clientflowSection.head[language]}
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-          {DataHome.clientflowSection.flow.map((flow, index) => (
-            <CardUserflow
-              key={index}
-              index={index}
-              num={index + 1}
-              label={flow.head[language]}
-              desc={flow.desc[language]}
-            />
-          ))}
+        <div className="overflow-x-auto lg:overflow-x-auto lg:min-h-[770px] lg:bg-[#141414]">
+          {/* Container utama */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-8 lg:relative lg:min-w-[1890px] lg:h-[680px]">
+            <UserflowConnector />
+            {/* Garis penghubung - hanya muncul di desktop */}
+            {DataHome.clientflowSection.flow.map((flow, index) => (
+              <div key={index}>
+                <CardUserflow
+                  index={index}
+                  num={index + 1}
+                  label={flow.head[language]}
+                  desc={flow.desc[language]}
+                  xlClassName={flow.xlClassName}
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
 

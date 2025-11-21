@@ -106,26 +106,32 @@ const DataHome = {
       {
         head: { en: 'Choose a Plan', id: 'Pilih Paket' },
         desc: { en: 'You pick the plan that fits your needs and project goals.', id: 'Anda memilih paket yang cocok dengan kebutuhan dan tujuan bisnis Anda.' },
+        xlClassName: 'lg:top-12 lg:left-16', // Contoh: posisi kiri atas
       },
       {
         head: { en: 'Payment', id: 'Pembayaran' },
         desc: { en: 'Make payment via Online to start the project.', id: 'Lakukan pembayaran secara Online untuk memulai proyek.' },
+        xlClassName: 'lg:top-104 lg:left-40', // Contoh: posisi kanan dengan offset
       },
       {
         head: { en: 'Onboarding and Brief', id: 'Onboarding dan Brief' },
         desc: { en: 'You fill in a simple brief. We understand your goals, users, and project scope.', id: 'Anda mengisi brief singkat. Kami memahami tujuan, target user, dan ruang lingkup proyek Anda.' },
+        xlClassName: 'lg:top-33 lg:left-132', // Contoh: posisi tengah kiri
       },
       {
         head: { en: 'Design and Revision', id: 'Desain dan Revisi' },
         desc: { en: 'Our team will create the UI/UX design. You review and refine it until it matches your expectations.', id: 'Tim kami akan membuat desain UI/UX. Anda meninjau dan memberikan feedback sampai sesuai dengan kebutuhan Anda.' },
+        xlClassName: 'lg:top-8 lg:left-248', // Contoh: posisi kanan bawah
       },
       {
         head: { en: 'Development and Deployment.', id: 'Pengembangan dan Deployment.' },
         desc: { en: 'Our team will build the product and deploy your product to production. We ensure everything works smoothly.', id: 'Tim kami akan membangun produk sesuai desain final dan deploy produk ke server produksi. Kami juga memastikan semuanya berjalan dengan baik.' },
+        xlClassName: ' lg:top-98 lg:left-274', // Contoh: posisi bawah kiri
       },
       {
         head: { en: 'Project Complete', id: 'Proyek Selesai' },
         desc: { en: 'The project is complete once everything meets your approval.', id: 'Proyek selesai setelah semua hasil sesuai dan Anda menyetujuinya.' },
+        xlClassName: 'lg:top-28 lg:left-374', // Contoh: posisi kanan bawah
       },
     ],
   },

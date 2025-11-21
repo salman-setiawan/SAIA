@@ -1,13 +1,13 @@
 import React from 'react'
-import { paragraphSmallText, textHeading3 } from '../data/uiStyle'
+import { textHeading3 } from '../data/uiStyle'
 import Button from '../components/Button';
 
-const CardUserflow = ({label, desc, num, index}) => {
+const CardUserflow = ({label, desc, num, index, xlClassName}) => {
   const renderIllustration = () => {
     switch(index) {
       case 0: // Step 1
         return ( 
-          <div className={`relative h-48 w-full rounded-md bg-gradient-to-br from-blue-500/20 via-blue-400/10 to-transparent overflow-hidden`}>
+          <div className={`relative h-48 w-full rounded-md bg-[#0c0c0c] bg-gradient-to-br from-blue-500/20 via-blue-400/10 to-transparent overflow-hidden`}>
             <div className="absolute inset-5 flex justify-center sm:justify-start sm:pl-4 items-center">
               <div className="flex gap-x-3">
                 <div className="relative h-16 w-24 rounded-md bg-gradient-to-tl from-blue-800 to-blue-500 px-3 py-2 font-semibold shadow-lg shadow-black/30 flex items-end">
@@ -30,7 +30,7 @@ const CardUserflow = ({label, desc, num, index}) => {
         );
       case 1: // Step 2
         return ( 
-          <div className={`relative h-48 w-full rounded-md bg-gradient-to-br from-blue-500/20 via-blue-400/10 to-transparent overflow-hidden`}>
+          <div className={`relative h-48 w-full rounded-md bg-[#0c0c0c] bg-gradient-to-br from-blue-500/20 via-blue-400/10 to-transparent overflow-hidden`}>
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="relative flex items-center justify-center w-[152px] h-[152px]">
                 <div className='absolute top-2 left-1 rotate-[-8deg] p-1 flex justify-center rounded-lg bg-gradient-to-tl from-blue-600 to-blue-300 w-[38px] font-black text-black text-[20px] shadow-lg shadow-black/30'>
@@ -49,7 +49,7 @@ const CardUserflow = ({label, desc, num, index}) => {
         );
       case 2: // Step 3
         return ( 
-          <div className={`relative h-48 w-full rounded-md bg-gradient-to-br from-blue-500/20 via-blue-400/10 to-transparent overflow-hidden`}>
+          <div className={`relative h-48 w-full rounded-md bg-[#0c0c0c] bg-gradient-to-br from-blue-500/20 via-blue-400/10 to-transparent overflow-hidden`}>
             <div className="absolute inset-5 flex justify-center items-center">
             <div className="relative w-full max-w-xs">
               <div className="p-3 rounded-md border border-blue-200/10 bg-[#181818]/40 backdrop-blur">
@@ -103,7 +103,7 @@ const CardUserflow = ({label, desc, num, index}) => {
         );
       case 3: // Step 4
         return ( 
-          <div className={`relative h-48 w-full rounded-md bg-gradient-to-br from-blue-500/20 via-blue-400/10 to-transparent overflow-hidden`}>
+          <div className={`relative h-48 w-full rounded-md bg-[#0c0c0c] bg-gradient-to-br from-blue-500/20 via-blue-400/10 to-transparent overflow-hidden`}>
             <div className="absolute inset-4 top-20 sm:w-[325px] flex justify-center items-center">
               <div className="relative w-full space-y-1.5">
                 <div className="flex items-center justify-between rounded-md border border-blue-200/10 bg-[#0c0c0c]/70 px-3 py-2 text-xs backdrop-blur">
@@ -131,7 +131,7 @@ const CardUserflow = ({label, desc, num, index}) => {
         );
       case 4: // Step 5
         return ( 
-          <div className={`relative h-48 w-full rounded-md bg-gradient-to-br from-blue-500/20 via-blue-400/10 to-transparent overflow-hidden`}>
+          <div className={`relative h-48 w-full rounded-md bg-[#0c0c0c] bg-gradient-to-br from-blue-500/20 via-blue-400/10 to-transparent overflow-hidden`}>
             <div className="absolute inset-5 flex justify-center items-center gap-x-6">
               <div className="p-2 border border-blue-200/10 bg-[#181818]/50 backdrop-blur rounded-md text-[11px]">
                 <div className="text-blue-200">function <span className='text-orange-300'>App</span><span className="text-yellow-300">() {"{"}</span></div>
@@ -145,7 +145,7 @@ const CardUserflow = ({label, desc, num, index}) => {
         );
       case 5: // Step 6
         return ( 
-          <div className={`relative h-48 w-full rounded-md bg-gradient-to-br from-blue-500/20 via-blue-400/10 to-transparent overflow-hidden`}>
+          <div className={`relative h-48 w-full rounded-md bg-[#0c0c0c] bg-gradient-to-br from-blue-500/20 via-blue-400/10 to-transparent overflow-hidden`}>
             <div className="absolute inset-5 flex justify-center items-center">
               <div className="relative top-[-36px] left-12 p-1 h-[32px] bg-gradient-to-tl from-blue-600 to-blue-300 rounded-full shadow-lg shadow-black/30 rotate-[-10deg]">
                 <span className="material-symbols-outlined text-black" style={{ fontSize: '24px', fontVariationSettings: "'FILL' 1" }}> check_circle </span>
@@ -161,13 +161,13 @@ const CardUserflow = ({label, desc, num, index}) => {
   };
 
   return (
-    <div className="flex flex-col gap-3">
+    <div className={`flex flex-col gap-3 lg:gap-2 lg:min-w-[340px] lg:max-w-[340px] lg:absolute lg:z-10 ${xlClassName}`}>
       {renderIllustration()}
       <div className="flex gap-x-2.5">
-        <div className="mt-1 hidden xl:block min-w-4 max-h-4 bg-gradient-to-tl from-blue-600 to-blue-300 rounded-full shadow-lg shadow-black/30"></div>
-        <div className={`flex flex-col gap-y-1 pb-6`}>
-          <div className={textHeading3}>{label}</div>
-          <div className={`${paragraphSmallText} pr-8`}>{desc}</div>
+        <div className="mt-2 hidden lg:block min-w-4 max-h-4 bg-gradient-to-tl from-blue-600 to-blue-300 rounded-full shadow-lg shadow-black/30"></div>
+        <div className={`flex flex-col gap-y-1 pb-2`}>
+          <div className={`${textHeading3} lg:bg-[#141414] lg:w-fit lg:pt-1 lg:pb-0.5 lg:pr-3`}>{label}</div>
+          <div className={`text-[14px] lg:text-[15px] text-justify text-white/60 lg:text-white/80 pr-8 lg:pr-2`}>{desc}</div>
         </div>
       </div>
     </div>
