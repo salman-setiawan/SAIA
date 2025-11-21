@@ -11,3 +11,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+@theme { 
+  --breakpoint-3xl: 120rem;
+}

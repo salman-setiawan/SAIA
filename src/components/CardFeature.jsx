@@ -7,7 +7,7 @@ const CardFeature = ({label, desc, index}) => {
       case 0: // Landing Page
         return (
           <div className="relative h-48 w-full rounded-md bg-gradient-to-br from-blue-600/30 via-blue-500/8 to-transparent overflow-hidden">
-            <div className="absolute h-48 sm:w-[300px] inset-x-16 sm:inset-x-5 top-5 rounded-lg border border-white/20 bg-[#0c0c0c]/55 backdrop-blur shadow-sm">
+            <div className="absolute h-48 sm:w-[350px] inset-x-16 sm:inset-x-5 top-5 rounded-lg border border-white/20 bg-[#0c0c0c]/55 backdrop-blur shadow-sm">
               <div className="flex items-center justify-between px-3 py-1.5">
                 <span className="h-2.5 w-2.5 rounded-full bg-blue-300"></span>
                 <div className="h-2.5 w-20 rounded bg-neutral-700"></div>
@@ -38,7 +38,7 @@ const CardFeature = ({label, desc, index}) => {
       case 1: // Company Profile Website
         return (
           <div className="relative h-48 w-full rounded-md bg-gradient-to-br from-blue-600/30 via-blue-500/8 to-transparent overflow-hidden">
-            <div className="absolute h-48 sm:w-[300px] inset-x-16 sm:inset-x-5 top-5 rounded-lg border border-white/20 bg-[#0c0c0c]/55 backdrop-blur flex overflow-hidden">
+            <div className="absolute h-48 sm:w-[350px] inset-x-16 sm:inset-x-5 top-5 rounded-lg border border-white/20 bg-[#0c0c0c]/55 backdrop-blur flex overflow-hidden">
               <div className="w-2/5 border-r border-neutral-800 p-2.5 space-y-2">
                 <div className="h-6 w-6 rounded-full bg-blue-300 mx-auto"></div>
                 <div className="space-y-1">
@@ -67,7 +67,7 @@ const CardFeature = ({label, desc, index}) => {
       case 2: // Online Store
         return (
           <div className="relative h-48 w-full rounded-md bg-gradient-to-br from-blue-600/30 via-blue-500/8 to-transparent overflow-hidden">
-            <div className="absolute h-48 sm:w-[300px] inset-x-16 sm:inset-x-5 top-5 rounded-lg border border-white/20 bg-[#0c0c0c]/55 backdrop-blur p-2.5 space-y-2">
+            <div className="absolute h-48 sm:w-[350px] inset-x-16 sm:inset-x-5 top-5 rounded-lg border border-white/20 bg-[#0c0c0c]/55 backdrop-blur p-2.5 space-y-2">
               <div className="flex items-center justify-between">
                 <div className="h-2.5 w-24 rounded bg-blue-300"></div>
                 <div className="h-2.5 w-10 rounded bg-neutral-700"></div>
@@ -114,7 +114,7 @@ const CardFeature = ({label, desc, index}) => {
       case 3: // Custom Web App
         return (
           <div className="relative h-48 w-full rounded-md bg-gradient-to-br from-blue-600/30 via-blue-500/8 to-transparent overflow-hidden">
-            <div className="absolute h-48 sm:w-[300px] inset-x-16 sm:inset-x-5 top-5 rounded-lg border border-white/20 bg-[#0c0c0c]/55 backdrop-blur p-2.5 space-y-2">
+            <div className="absolute h-48 sm:w-[350px] inset-x-16 sm:inset-x-5 top-5 rounded-lg border border-white/20 bg-[#0c0c0c]/55 backdrop-blur p-2.5 space-y-2">
               <div className="flex items-center justify-between gap-2">
                 <div className="h-2.5 w-20 rounded bg-blue-300"></div>
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-blue-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
@@ -147,7 +147,7 @@ const CardFeature = ({label, desc, index}) => {
       case 4: // ERP System
         return (
           <div className="relative h-48 w-full rounded-md bg-gradient-to-br from-blue-600/30 via-blue-500/8 to-transparent overflow-hidden">
-            <div className="absolute h-48 sm:w-[300px] inset-x-16 sm:inset-x-5 top-5 rounded-lg border border-white/20 bg-[#0c0c0c]/55 backdrop-blur p-2.5">
+            <div className="absolute h-48 sm:w-[350px] inset-x-16 sm:inset-x-5 top-5 rounded-lg border border-white/20 bg-[#0c0c0c]/55 backdrop-blur p-2.5">
               <div className="grid grid-cols-3 gap-2">
                 <div className="relative flex items-center justify-center h-10 rounded-md bg-neutral-700">
                   <div className="h-2 w-10 rounded bg-blue-300"></div>

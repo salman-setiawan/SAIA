@@ -58,7 +58,7 @@ const DataHome = {
       {
         img: '',
         head: { en: 'And many more..', id: 'Dan masih banyak lagi..' },
-        desc: { en: 'We can help you build any web or app idea beyond our standard product features. You bring the concept. We develop it to fit your needs.', id: 'Kami siap membantu mewujudkan web atau aplikasi di luar fitur standar produk kami. Anda bawa idenya. Kami kembangkan sampai sesuai kebutuhan Anda.' },
+        desc: { en: 'We can help you build any web or app idea beyond our standard product features. You bring the concept. We develop it to fit your needs.', id: 'Kami siap membantu mewujudkan web atau aplikasi di luar fitur standar produk kami. anda bawa idenya. Kami kembangkan sampai sesuai kebutuhan anda.' },
       },
     ],
   },
@@ -105,7 +105,7 @@ const DataHome = {
     flow: [
       {
         head: { en: 'Choose a Plan', id: 'Pilih Paket' },
-        desc: { en: 'You pick the plan that fits your needs and project goals.', id: 'Anda memilih paket yang cocok dengan kebutuhan dan tujuan bisnis Anda.' },
+        desc: { en: 'You pick the plan that fits your needs and project goals.', id: 'anda memilih paket yang cocok dengan kebutuhan dan tujuan bisnis anda.' },
         xlClassName: 'lg:top-12 lg:left-16', // Contoh: posisi kiri atas
       },
       {
@@ -115,22 +115,22 @@ const DataHome = {
       },
       {
         head: { en: 'Onboarding and Brief', id: 'Onboarding dan Brief' },
-        desc: { en: 'You fill in a simple brief. We understand your goals, users, and project scope.', id: 'Anda mengisi brief singkat. Kami memahami tujuan, target user, dan ruang lingkup proyek Anda.' },
+        desc: { en: 'You fill in a simple brief. We understand your goals, users, and project scope.', id: 'anda mengisi brief singkat. Kami memahami tujuan, target user, dan ruang lingkup proyek anda.' },
         xlClassName: 'lg:top-33 lg:left-132', // Contoh: posisi tengah kiri
       },
       {
         head: { en: 'Design and Revision', id: 'Desain dan Revisi' },
-        desc: { en: 'Our team will create the UI/UX design. You review and refine it until it matches your expectations.', id: 'Tim kami akan membuat desain UI/UX. Anda meninjau dan memberikan feedback sampai sesuai dengan kebutuhan Anda.' },
+        desc: { en: 'Our team will create the UI/UX design. You review and refine it until it matches your expectations.', id: 'Tim kami akan membuat desain UI/UX. anda meninjau dan memberikan feedback sesuai kebutuhan anda.' },
         xlClassName: 'lg:top-8 lg:left-248', // Contoh: posisi kanan bawah
       },
       {
         head: { en: 'Development and Deployment.', id: 'Pengembangan dan Deployment.' },
-        desc: { en: 'Our team will build the product and deploy your product to production. We ensure everything works smoothly.', id: 'Tim kami akan membangun produk sesuai desain final dan deploy produk ke server produksi. Kami juga memastikan semuanya berjalan dengan baik.' },
+        desc: { en: 'Our team builds the product according to the final design into a ready-to-use and functional product.', id: 'Tim kami membangun produk sesuai desain final menjadi produk siap pakai dan berfungsi.' },
         xlClassName: ' lg:top-98 lg:left-274', // Contoh: posisi bawah kiri
       },
       {
         head: { en: 'Project Complete', id: 'Proyek Selesai' },
-        desc: { en: 'The project is complete once everything meets your approval.', id: 'Proyek selesai setelah semua hasil sesuai dan Anda menyetujuinya.' },
+        desc: { en: 'The project is complete once everything meets your approval.', id: 'Proyek selesai setelah semuanya memenuhi persetujuan anda.' },
         xlClassName: 'lg:top-28 lg:left-374', // Contoh: posisi kanan bawah
       },
     ],

@@ -78,7 +78,7 @@ const Home = () => {
       <ParallaxWithModel />
 
       {/* About Section */}
-      <div className="flex flex-col gap-y-6 lg:gap-y-4 w-full lg:max-w-[1140px] pt-6 pb-12 px-4">
+      <div className="flex flex-col gap-y-6 lg:gap-y-4 w-full lg:max-w-[1140px] pt-6 lg:pt-12 pb-12 px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
           {/* Illustration */}
           <div className="relative w-full min-h-64 md:min-h-72 max-h-[320px] rounded-md flex justify-center items-center bg-gradient-to-br from-blue-500/18 via-blue-500/8 to-transparent overflow-hidden">
@@ -145,7 +145,7 @@ const Home = () => {
         <div className={`${textHeading2} md:text-center`}>
           {DataHome.clientflowSection.head[language]}
         </div>
-        <div className="overflow-x-auto lg:overflow-x-auto lg:min-h-[770px] lg:bg-[#141414]">
+        <div className="overflow-x-auto lg:overflow-x-auto lg:min-h-[770px] lg:bg-[#141414] 3xl:flex 3xl:justify-center">
           {/* Container utama */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-8 lg:relative lg:min-w-[1890px] lg:h-[680px]">
             <UserflowConnector />
@@ -201,14 +201,14 @@ const Home = () => {
 
       {/* CTA Section */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-8 xl:gap-x-12 w-full lg:max-w-[1140px] pt-16 pb-20 px-4 items-center">
-      <div className="relative md:hidden h-64 overflow-hidden">
-        <div className="absolute inset-0 z-10 bg-gradient-to-b from-transparent to-[#0c0c0c]"></div>
-        <div className="absolute inset-x-1 -top-22">
-          <div className="scale-[0.8] rounded-2xl overflow-hidden">
-            <Models />
+        <div className="relative md:hidden h-64 overflow-hidden">
+          <div className="absolute inset-0 z-10 bg-gradient-to-b from-transparent via-transparent to-[#0c0c0c]"></div>
+          <div className="absolute inset-x-1 -top-22">
+            <div className="scale-[0.8] rounded-2xl overflow-hidden">
+              <Models />
+            </div>
           </div>
         </div>
-      </div>
         <div className="flex flex-col gap-y-8">
           <div className="space-y-2">
             <div className={`${textHeading2}`}>
@@ -220,8 +220,8 @@ const Home = () => {
           </div>
           <Button label={DataHome.ctaSection.cta[0][language]} width="w-fit" />
         </div>
-        <div className="relative hidden md:flex h-64 overflow-hidden">
-          <div className="absolute inset-0 z-10 bg-gradient-to-b from-transparent to-[#0c0c0c]"></div>
+        <div className="relative hidden md:flex h-80 overflow-hidden">
+          <div className="absolute inset-0 z-10 bg-gradient-to-b from-transparent via-transparent to-[#0c0c0c]"></div>
           <div className="absolute -top-23 -left-35">
             <div className="scale-[0.8] w-[1440px] rounded-2xl overflow-hidden">
               <Models />
