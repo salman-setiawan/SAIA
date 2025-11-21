@@ -6,13 +6,14 @@ import Button from '../components/Button';
 import CardBenefit from '../components/CardBenefit';
 import CardFeature from '../components/CardFeature';
 import CardUserflow from '../components/CardUserflow';
-import UserflowConnector from '../components/UserflowConnector';
+import UserflowConnector from '../motion/UserflowConnector';
 import DataHome from '../data/dataHome';
 import TypingText from '../motion/TypingText';
 import ParallaxWithModel from '../motion/ParallaxWithModel';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import Models from './Models';
+import AboutConnector from '../motion/AboutConnector';
 
 const Home = () => {
   const { language } = useLanguage();
@@ -78,18 +79,19 @@ const Home = () => {
       <ParallaxWithModel />
 
       {/* About Section */}
-      <div className="flex flex-col gap-y-6 lg:gap-y-4 w-full lg:max-w-[1140px] pt-6 lg:pt-12 pb-12 px-4">
+      <div className="flex flex-col gap-y-8 lg:gap-y-4 w-full lg:max-w-[1140px] pt-6 lg:pt-12 pb-12 px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
           {/* Illustration */}
           <div className="relative w-full min-h-64 md:min-h-72 max-h-[320px] rounded-md flex justify-center items-center bg-gradient-to-br from-blue-500/18 via-blue-500/8 to-transparent overflow-hidden">
             <div className="relative flex justify-center items-center z-10 max-w-[437px] max-h-[256px]">
-              <div className="absolute top-12 left-24 py-1 px-3 rounded bg-[#0c0c0c]/50 backdrop-blur border border-blue-200/12 shadow-xl shadow-black/40">Apps</div>
-              <div className="absolute bottom-8 left-20 py-1 px-3 rounded bg-[#0c0c0c]/50 backdrop-blur border border-blue-200/12 shadow-xl shadow-black/40">Solution</div>
+              <AboutConnector />
+              <div className="absolute top-12 left-18 py-1 px-3 rounded bg-[#0c0c0c]/50 backdrop-blur border border-blue-200/12 shadow-xl shadow-black/40">Apps</div>
+              <div className="absolute bottom-12 left-20 py-1 px-3 rounded bg-[#0c0c0c]/50 backdrop-blur border border-blue-200/12 shadow-xl shadow-black/40">Solution</div>
               <div className="absolute -top-3 right-28 py-1 px-3 rounded bg-[#0c0c0c]/50 backdrop-blur border border-blue-200/12 shadow-xl shadow-black/40">Vision</div>
               <div className="absolute bottom-16 right-16 py-1 px-3 rounded bg-[#0c0c0c]/50 backdrop-blur border border-blue-200/12 shadow-xl shadow-black/40">Idea</div>
               <div className="absolute top-16 right-8 py-1 px-3 rounded bg-[#0c0c0c]/50 backdrop-blur border border-blue-200/12 shadow-xl shadow-black/40">Problem</div>
             </div>
-            <div className="absolute inset-5 flex justify-center items-center gap-x-6 z-50">
+            <div className="absolute inset-5 flex justify-center items-center z-50">
               <img src="/vite.svg" alt="" className="h-16 -rotate-16 shadow-xl shadow-black/60" />
             </div>
           </div>
@@ -99,7 +101,7 @@ const Home = () => {
               {DataHome.aboutSection.head[language]}
             </div>
             {DataHome.aboutSection.desc.map((item, index) => (
-              <div key={index} className={`${textRegular} text-justify mb-1 ${textSemi}`}>
+              <div key={index} className={`${textRegular} text-justify mb-1 mr-6 ${textSemi}`}>
                 {item[language]}
               </div>
             ))}

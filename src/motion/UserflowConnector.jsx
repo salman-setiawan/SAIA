@@ -3,25 +3,15 @@ import React from 'react';
 const UserflowConnector = () => {  
   const paths = [
     // Path 1 -> 2:
-    {
-      d: "M 72 270 L 72 632 L 155 632",
-    },
+    { d: "M 72 270 L 72 632 L 155 632" },
     // Path 2 -> 3:
-    {
-      d: "M 188 632 L 400 632 L 400 348 L 525 348",
-    },
+    { d: "M 188 632 L 400 632 L 400 348 L 525 348" },
     // Path 3 -> 4:
-    {
-      d: "M 560 348 L 900 348 L 900 248 L 988 248",
-    },
+    { d: "M 560 348 L 900 348 L 900 248 L 988 248" },
     // Path 4 -> 5:
-    {
-      d: "M 1001 255 L 1001 608 L 1093 608",
-    },
+    { d: "M 1001 255 L 1001 608 L 1093 608" },
     // Path 5 -> 6:
-    {
-      d: "M 1150 608 L 1504 608 L 1504 340",
-    }
+    { d: "M 1150 608 L 1504 608 L 1504 340"  }
   ];
 
   return (
@@ -40,7 +30,7 @@ const UserflowConnector = () => {
       </defs>
 
       <style>{`
-        .connector-path {
+        .user-connector-path {
           stroke: #60a5fa;
           stroke-width: 2;
           fill: none;
@@ -50,7 +40,7 @@ const UserflowConnector = () => {
           stroke-linejoin: round;
         }
 
-        .connector-glow {
+        .user-connector-glow {
           stroke:rgb(185, 255, 179);
           stroke-width: 4;
           fill: none;
@@ -73,17 +63,8 @@ const UserflowConnector = () => {
       
       {paths.map((path, index) => (
         <g key={index}>
-          <path
-            d={path.d}
-            className="connector-path"
-            pathLength="100"
-          />
-          <path
-            d={path.d}
-            className="connector-glow"
-            pathLength="100"
-            style={{ animationDelay: `${index * 0.8}s` }}
-          />
+          <path d={path.d} className="user-connector-path" pathLength="100" />
+          <path d={path.d} className="user-connector-glow" pathLength="100" style={{ animationDelay: `${index * 0.8}s` }} />
         </g>
       ))}
     </svg>
