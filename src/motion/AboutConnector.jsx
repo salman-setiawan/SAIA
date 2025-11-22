@@ -5,7 +5,7 @@ const AboutConnector = () => {
     // Idea (merah)
     { d: "M 880 258 L 940 258 L 940 308", color: "rgb(255, 119, 119)" },
     // Vision (merah)
-    { d: "M 832 346 L 940 346", color: "rgb(255, 119, 119)" },
+    { d: "M 832 346 L 940 346 L 950 340", color: "rgb(255, 119, 119)" },
     // Problem (merah)
     { d: "M 912 420 L 950 420 L 950 340", color: "rgb(255, 119, 119)" },
     // Solution (hijau)
