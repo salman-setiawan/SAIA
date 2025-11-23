@@ -1,6 +1,5 @@
 import React from 'react';
 import { useLanguage } from '../components/LanguageContext';
-import CardPricing from '../components/CardPricing';
 import { textHeading1, textHeading2, textMicro, textRegular, textSemi } from '../data/uiStyle';
 import Button from '../components/Button';
 import CardBenefit from '../components/CardBenefit';
@@ -22,14 +21,6 @@ const Home = () => {
     en: ["Scale Up", "Digitalize"],
     id: ["Kembangkan", "Digitalisasi"]
   };
-
-  const services = [...DataHome.pricingSection.services].sort((a, b) => a.id - b.id);
-
-  const [activeService, setActiveService] = React.useState(
-    services[0].id
-  );
-
-  const selected = services.find(s => s.id === activeService);
 
   return (
     <div className="flex flex-col justify-center items-center">
@@ -164,40 +155,6 @@ const Home = () => {
               </div>
             ))}
           </div>
-        </div>
-      </div>
-
-      {/* Pricing Section */}
-      <div className="flex flex-col gap-y-14 w-full lg:max-w-[1140px] py-12 px-4">
-        <div className="flex flex-col gap-y-4">
-          <div className={`${textHeading2} md:text-center mb-1`}>
-            {DataHome.pricingSection.head[language]}
-          </div>
-          {/* Service Button */}
-          <div className="flex flex-wrap gap-3 md:justify-center">
-            {services.map(service => (
-              <Button
-                key={service.id}
-                type="multi"
-                active={activeService === service.id}
-                label={service.label[language]}
-                width="w-fit"
-                onClick={() => setActiveService(service.id)}
-              />
-            ))}
-          </div>
-        </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 justify-center">
-          {selected.packages.map((p, index) => (
-            <CardPricing
-              key={index}
-              deal={p.deal?.[language]}
-              price={typeof p.price === 'string' ? p.price : p.price[language]}
-              desc={p.desc[language]}
-              benefit={p.benefit}
-              cta={p.cta[language]}
-            />
-          ))}
         </div>
       </div>
 
