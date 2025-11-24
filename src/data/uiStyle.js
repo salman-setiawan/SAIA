@@ -28,16 +28,14 @@ export const textInverted = 'text-black';
 
 
 // Component Specs
-export const buttonSpecs = `px-4 py-2 rounded-md ${textSmall} font-medium shadow-lg shadow-black/10 cursor-pointer bg-gradient-to-tl from-[#221E90] to-[#3932FF] hover:bg-gradient-to-tl hover:from-[#252435] hover:to-[#42415D]`;
+export const buttonSpecs = `px-4 py-2 rounded-md ${textSmall} font-medium shadow-lg shadow-black/10 cursor-pointer bg-blue-600 hover:bg-blue-800`;
 
 export const multibuttonSpecs = `px-4 py-2 rounded-md ${textSmall} font-medium shadow-lg shadow-black/10 cursor-pointer`;
-export const multibuttonActive = `bg-gradient-to-tl from-[#221E90] to-[#3932FF] hover:bg-gradient-to-tl hover:from-[#252435] hover:to-[#42415D]`;
+export const multibuttonActive = `bg-blue-600 hover:bg-blue-800`;
 export const multibuttonInactive = `bg-[#202020] hover:bg-[#141414]`;
 
 export const cardSpecs = `p-3 rounded-md border border-white/2 bg-gradient-to-tl from-[#121212] to-[#202020]`;
 export const chipSpecs = `px-2 py-0.5 rounded-full ${textPrimary100}`;
-export const dropdownOuterSpecs = ``;
-export const dropdownButtonSpecs = ``;
 export const navigationSpecs = `px-4 py-2 w-full flex justify-between backdrop-sm-blur`;
 
 export const paragraphRegularText = `${textSmall} ${textSemi} text-justify`;
