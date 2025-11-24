@@ -201,7 +201,7 @@ const DataHome = {
             benefit: [
               { key: 'page', en: 'Full-custom landing page', id: 'Kustmoisasi Penuh Landing page', available: true },
               { key: 'section', en: 'Sections limit', id: 'Jumlah section', detail: 'Unlimited', available: true },
-              { key: 'responsive', en: 'Responsive design', id: 'Desain responsif', available: true },,
+              { key: 'responsive', en: 'Responsive design', id: 'Desain responsif', available: true },
               { key: 'custom_color', en: 'Custom color', id: 'Custom warna', available: true },
               { key: 'custom_font', en: 'Custom font', id: 'Custom font', available: true },
               { key: 'custom_layout', en: 'Custom layout', id: 'Custom layout', available: true },
