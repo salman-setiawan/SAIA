@@ -28,8 +28,8 @@ const Navigation = () => {
             </Link>
           </div>
 
-          <div className="hidden md:flex gap-x-3">
-            <button className={`px-2 h-[30px] ${textSmall} font-medium cursor-pointer bg-blue-700 hover:bg-blue-900 rounded-md`}>Contact Us</button>
+          <div className="hidden md:flex gap-x-4">
+            <button className={`px-2 h-[30px] text-[13px] font-medium cursor-pointer bg-blue-700 hover:bg-blue-900 rounded-md`}>Contact Us</button>
             <LanguageToggle />
           </div>
 

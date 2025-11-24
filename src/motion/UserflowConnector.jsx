@@ -42,12 +42,12 @@ const UserflowConnector = () => {
 
         .user-connector-glow {
           stroke:rgb(185, 255, 179);
-          stroke-width: 4;
+          stroke-width: 3.5;
           fill: none;
           stroke-linecap: round;
-          stroke-dasharray: 2 6;
+          stroke-dasharray: 1 3;
           filter: url(#connector-glow);
-          opacity: 0.5;
+          opacity: 0.6;
           animation: snakeTrail 12s linear infinite;
         }
 

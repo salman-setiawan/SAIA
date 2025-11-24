@@ -104,7 +104,7 @@ const CardUserflow = ({label, desc, num, index, xlClassName}) => {
       case 3: // Step 4
         return ( 
           <div className={`relative h-48 w-full rounded-md bg-[#0c0c0c] bg-gradient-to-br from-blue-500/20 via-blue-400/10 to-transparent overflow-hidden`}>
-            <div className="absolute inset-4 top-20 sm:w-[325px] flex justify-center items-center">
+            <div className="absolute inset-4 top-20 flex justify-center sm:min-w-[340px] items-center">
               <div className="relative w-full space-y-1.5">
                 <div className="flex items-center justify-between rounded-md border border-blue-200/10 bg-[#0c0c0c]/70 px-3 py-2 text-xs backdrop-blur">
                   <div className="flex items-center gap-2 text-slate-200">
@@ -118,9 +118,9 @@ const CardUserflow = ({label, desc, num, index, xlClassName}) => {
                   </div>
                 </div>
                 <div className="relative flex h-40 items-center justify-center rounded-md border border-blue-200/10 bg-[#181818]/40 backdrop-blur p-3">
-                  <div className="absolute top-2 left-2.5 flex justify-between w-full">
+                  <div className="absolute top-2 inset-x-3 flex justify-between">
                     <div className="text-[11px] font-medium">Design Review v1.28</div>
-                    <div className="text-[11px] font-medium text-blue-300 pr-5">Button Component</div>
+                    <div className="text-[11px] font-medium text-blue-300 text-end">Button Component</div>
                   </div>
                   <Button label='This is a Button' />
                 </div>
