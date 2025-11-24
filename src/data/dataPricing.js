@@ -18,7 +18,7 @@ const DataPricing = {
     head: { en: 'Our Pricing', id: 'Harga Layanan' },
     services: [
       {
-        id: 3,
+        id: 1,
         label: { en: 'Landing Page', id: 'Landing Page' },
         packages: [
           {
@@ -48,6 +48,7 @@ const DataPricing = {
             package: 2,
             deal: { en: 'Best Deal' , id: 'Penawaran Terbaik' },
             name: { en: 'Regular Package', id: 'Paket Reguler' },
+            range: { en: 'Price Start From' , id: 'Harga Mulai Dari' },
             price: 'Rp 1.500.000',
             desc: {
               en: 'Flexible landing page with custom colors, layout, design, and integrated CTA for better conversions.',
@@ -93,12 +94,13 @@ const DataPricing = {
         ]
       },
       {
-        id: 4,
+        id: 2,
         label: { en: 'Company Profile Web', id: 'Web Company Profile' },
         packages: [
           {
             package: 1,
             name: { en: 'Budget Package', id: 'Paket Hemat' },
+            range: { en: 'Price Start From' , id: 'Harga Mulai Dari' },
             price: 'Rp 3.500.000',
             desc: {
               en: 'Simple company profile for small businesses needing a clean, functional online presence.',
@@ -125,7 +127,9 @@ const DataPricing = {
     
           {
             package: 2,
+            deal: { en: 'Best Deal' , id: 'Penawaran Terbaik' },
             name: { en: 'Regular Package', id: 'Paket Reguler' },
+            range: { en: 'Price Start From' , id: 'Harga Mulai Dari' },
             price: 'Rp 5.500.000',
             desc: {
               en: 'Professional company profile with clean design, clear messaging, and a simple admin panel.',
@@ -179,13 +183,14 @@ const DataPricing = {
         ]
       },
       {
-        id: 1,
+        id: 3,
         label: { en: 'Online Store', id: 'Toko Online' },
         packages: [
           {
             package: 1,
             name: { en: 'Regular Package', id: 'Paket Reguler' },
-            price: 'Rp 4.500.000 – Rp 6.500.000',
+            range: { en: 'Price Start From' , id: 'Harga Mulai Dari' },
+            price: 'Rp 4.500.000',
             desc: {
               en: 'Starter online store for small catalogs with simple cart and WhatsApp-based checkout.',
               id: 'Toko online dasar untuk katalog kecil dengan keranjang sederhana dan checkout via WhatsApp.'
