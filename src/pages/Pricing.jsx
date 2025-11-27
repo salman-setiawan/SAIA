@@ -6,8 +6,10 @@ import CardPricing from '../components/CardPricing';
 import Button from '../components/Button';
 import Footer from '../components/Footer';
 import Navigation from '../components/Navigation';
-import Models from './Models';
 import DataPricing from '../data/dataPricing';
+import DraggableModel from '../motion/DraggableModel';
+import ModelsLP from './ModelsLP';
+import ModelsERP from './ModelsERP';
 
 const Pricing = () => {
   const { language } = useLanguage();
@@ -44,8 +46,16 @@ const Pricing = () => {
       </div>
 
       {/* Pricing UI Image */}
-      <div className="relative flex justify-center items-center w-full mx-auto bg-[#141414] h-[640px]">
-        <div className="">Contoh UI (berisi contoh template yang menyesuaikan active button)</div>
+      <div className="relative flex justify-center items-center w-full mx-auto bg-[#141414] h-[640px] overflow-hidden">
+        <div className="absolute inset-x-0 -inset-y-32 md:inset-y-0 pointer-events-none flex justify-center right-19 sm:right-32 md:right-0">
+          <DraggableModel>
+            <div className="w-[540px] sm:w-[640px] md:w-[800px] lg:w-[1080px] xl:w-[1400px]">
+              <div className="scale-[0.6] md:scale-[0.9] rounded-xl overflow-hidden shadow-2xl pointer-events-auto">
+                <ModelsLP />
+              </div>
+            </div>
+          </DraggableModel>
+        </div>
       </div>
 
       <div className="flex flex-col gap-y-4 sm:gap-y-10 w-full lg:max-w-[1140px] py-6 px-4">
@@ -86,7 +96,7 @@ const Pricing = () => {
         <div className="relative md:hidden h-64 overflow-hidden">
           <div className="absolute inset-0 z-10 bg-gradient-to-b from-transparent via-transparent to-[#0c0c0c]"></div>
           <div className="absolute inset-x-1 -top-22 scale-[0.8] rounded-2xl overflow-hidden">
-            <Models />
+            <ModelsERP />
           </div>
         </div>
         <div className="flex flex-col gap-y-8">
@@ -104,7 +114,7 @@ const Pricing = () => {
           <div className="absolute inset-0 z-10 bg-gradient-to-b from-transparent via-transparent to-[#0c0c0c]"></div>
           <div className="absolute -top-23 -left-35">
             <div className="scale-[0.8] w-[1440px] rounded-2xl overflow-hidden">
-              <Models />
+              <ModelsERP />
             </div>
           </div>
         </div>
@@ -112,7 +122,7 @@ const Pricing = () => {
 
       {/* Footer Section */}
       <Footer />
-      <div className={`${textMicro} ${textSemi} py-3`}>Avelora @ 2025. All right reserved.</div>
+      <div className={`${textMicro} ${textSemi} py-3`}>Aevenic @ 2025. All right reserved.</div>
     </div>
   )
 }

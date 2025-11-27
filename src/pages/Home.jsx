@@ -11,7 +11,7 @@ import TypingText from '../motion/TypingText';
 import ParallaxWithModel from '../motion/ParallaxWithModel';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
-import Models from './Models';
+import Models from './ModelsERP';
 import AboutConnector from '../motion/AboutConnector';
 
 const Home = () => {
@@ -157,7 +157,7 @@ const Home = () => {
           </div>
         </div>
         <div className="flex justify-center">
-          <Button label={DataHome.clientflowSection.cta[language]} width='w-full max-w-[360px]' />
+          <Button label={DataHome.clientflowSection.cta[language]} width='w-full max-w-[360px]' url={DataHome.clientflowSection.url} />
         </div>
       </div>
 
@@ -178,7 +178,7 @@ const Home = () => {
               {DataHome.ctaSection.desc[language]}
             </div>
           </div>
-          <Button label={DataHome.ctaSection.cta[0][language]} width="w-fit" />
+          <Button label={DataHome.ctaSection.cta[0][language]} width="w-fit" url='' />
         </div>
         <div className="relative hidden md:flex h-80 overflow-hidden">
           <div className="absolute inset-0 z-10 bg-gradient-to-b from-transparent via-transparent to-[#0c0c0c]"></div>
@@ -192,7 +192,7 @@ const Home = () => {
 
       {/* Footer Section */}
       <Footer />
-      <div className={`${textMicro} ${textSemi} py-3`}>Avelora @ 2025. All right reserved.</div>
+      <div className={`${textMicro} ${textSemi} py-3 select-none`}>Aevenic @ 2025. All right reserved.</div>
     </div>
   );
 };

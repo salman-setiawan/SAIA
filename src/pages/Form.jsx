@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import TextInput from '../components/TextInput.jsx';
 import TextArea from '../components/TextArea.jsx';
 import FileDropzone from '../components/FileDropzone.jsx';
-import { cardSpecs, textHeading2, textHeading3 } from '../data/uiStyle.js';
+import { textHeading2, textHeading3 } from '../data/uiStyle.js';
 import Button from '../components/Button.jsx';
 
 const Form = () => {

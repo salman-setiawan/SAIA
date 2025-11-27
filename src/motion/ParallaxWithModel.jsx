@@ -1,7 +1,7 @@
 import React from "react";
 import ParallaxBanner from "./ParallaxBanner";
 import DraggableModel from "./DraggableModel";
-import Models from "../pages/Models";
+import ModelsERP from "../pages/ModelsERP";
 import { useLanguage } from "../components/LanguageContext";
 import { baseNeutral100 } from "../data/uiStyle";
 
@@ -21,7 +21,7 @@ const ParallaxWithModel = () => {
         <DraggableModel>
           <div className="w-[540px] sm:w-[640px] md:w-[800px] lg:w-[1080px] xl:w-[1400px]">
             <div className="scale-[0.6] md:scale-[0.9] rounded-xl overflow-hidden shadow-2xl pointer-events-auto">
-              <Models />
+              <ModelsERP />
             </div>
           </div>
         </DraggableModel>
