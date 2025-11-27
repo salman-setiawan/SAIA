@@ -36,28 +36,19 @@ const DataHome = {
     },
     feature: [
       {
-        img: '',
         head: { en: 'Landing Page', id: 'Landing Page' },
         desc: { en: 'High converting landing pages designed to attract and convert visitors.', id: 'Landing page yang dirancang untuk menarik perhatian dan meningkatkan konversi.' },
       },
       {
-        img: '',
         head: { en: 'Company Profile Website', id: 'Website Company Profile' },
         desc: { en: 'Professional websites that strengthen your brand and credibility.', id: 'Website profesional yang memperkuat branding dan kredibilitas bisnis anda.' },
       },
       {
-        img: '',
         head: { en: 'Online Store', id: 'Toko Online' },
         desc: { en: 'Ecommerce websites with essential features for selling and scaling.', id: 'Website toko online dengan fitur penting untuk jualan dan berkembang.' },
       },
       {
-        img: '',
         head: { en: 'Custom Web App', id: 'Aplikasi Web Kustom' },
-        desc: { en: 'Custom-built web apps tailored to your business operations.', id: 'Aplikasi web yang dirancang khusus sesuai kebutuhan operasional bisnismu.' },
-      },
-      {
-        img: '',
-        head: { en: 'And many more..', id: 'Dan masih banyak lagi..' },
         desc: { en: 'We can help you build any web or app idea beyond our standard product features. You bring the concept. We develop it to fit your needs.', id: 'Kami siap membantu mewujudkan web atau aplikasi di luar fitur standar produk kami. anda bawa idenya. Kami kembangkan sampai sesuai kebutuhan anda.' },
       },
     ],
@@ -105,6 +96,7 @@ const DataHome = {
     cta: {
       en: 'Choose a Plan', id: 'Pilih Rencana',
     },
+    url: '/pricing',
     flow: [
       {
         head: { en: 'Choose a Plan', id: 'Pilih Rencana' },
