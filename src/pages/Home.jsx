@@ -121,7 +121,7 @@ const Home = () => {
             {DataHome.featureSection.desc[language]}
           </div>
         </div>
-        <div className="flex flex-col gap-y-16">
+        <div className="flex flex-col gap-y-24">
           {DataHome.featureSection.feature.map((f, index) => (
             <CardFeature
               key={index}
