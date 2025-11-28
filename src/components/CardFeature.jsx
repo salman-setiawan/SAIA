@@ -8,6 +8,18 @@ const CardFeature = ({label, desc, index}) => {
       case 0: // Landing Page
         return (
           <div className="relative h-100 w-full rounded-md overflow-hidden">
+            <div className="hidden md:block absolute z-20 top-14 left-12 py-1 px-3 rounded bg-[#0c0c0c]/50 backdrop-blur border border-blue-200/12 shadow-xl shadow-black/40 text-[14px]">
+              Hero Section
+            </div>
+            <div className="hidden md:block absolute z-20 top-18 left-124 py-1 px-3 rounded bg-[#0c0c0c]/50 backdrop-blur border border-blue-200/12 shadow-xl shadow-black/40 text-[14px]">
+              Highlight Product
+            </div>
+            <div className="hidden md:block absolute z-20 top-36 left-64 py-1 px-3 rounded bg-[#0c0c0c]/50 backdrop-blur border border-blue-200/12 shadow-xl shadow-black/40 text-[14px]">
+              Client Logo
+            </div>
+            <div className="hidden md:block absolute z-20 top-64 left-20 py-1 px-3 rounded bg-[#0c0c0c]/50 backdrop-blur border border-blue-200/12 shadow-xl shadow-black/40 text-[14px]">
+              Feature Section
+            </div>
             <div className="absolute inset-0 z-10 bg-gradient-to-b from-transparent to-[#0c0c0c]"></div>
             <div className="absolute h-124 w-[480px] left-1 md:left-24 top-5 rounded-lg border-2 border-white/8 bg-[#181818] p-2.5 space-y-6">
               <div className="flex items-center justify-between">
@@ -65,6 +77,18 @@ const CardFeature = ({label, desc, index}) => {
       case 1: // Company Profile Website
         return (
           <div className="relative h-100 w-full rounded-md overflow-hidden">
+            <div className="hidden md:block absolute z-20 top-16 left-12 py-1 px-3 rounded bg-[#0c0c0c]/50 backdrop-blur border border-blue-200/12 shadow-xl shadow-black/40 text-[14px]">
+              Company Image
+            </div>
+            <div className="hidden md:block absolute z-20 top-24 left-124 py-1 px-3 rounded bg-[#0c0c0c]/50 backdrop-blur border border-blue-200/12 shadow-xl shadow-black/40 text-[14px]">
+              Company Insight
+            </div>
+            <div className="hidden md:block absolute z-20 top-40 left-80 py-1 px-3 rounded bg-[#0c0c0c]/50 backdrop-blur border border-blue-200/12 shadow-xl shadow-black/40 text-[14px]">
+              Client Logo
+            </div>
+            <div className="hidden md:block absolute z-20 top-64 left-20 py-1 px-3 rounded bg-[#0c0c0c]/50 backdrop-blur border border-blue-200/12 shadow-xl shadow-black/40 text-[14px]">
+              Feature Section
+            </div>
             <div className="absolute inset-0 z-10 bg-gradient-to-b from-transparent to-[#0c0c0c]"></div>
             <div className="absolute h-124 w-[480px] left-1 md:left-24 top-5 rounded-lg border-2 border-white/8 bg-[#181818] p-2.5 space-y-3">
               <div className="flex items-center justify-between">
@@ -104,6 +128,15 @@ const CardFeature = ({label, desc, index}) => {
       case 2: // Online Store
         return (
           <div className="relative h-100 w-full rounded-md overflow-hidden">
+            <div className="hidden md:block absolute z-20 top-16 left-12 py-1 px-3 rounded bg-[#0c0c0c]/50 backdrop-blur border border-blue-200/12 shadow-xl shadow-black/40 text-[14px]">
+              Navigaton Menu
+            </div>
+            <div className="hidden md:block absolute z-20 top-14 left-128 py-1 px-3 rounded bg-[#0c0c0c]/50 backdrop-blur border border-blue-200/12 shadow-xl shadow-black/40 text-[14px]">
+              Search & Cart
+            </div>
+            <div className="hidden md:block absolute z-20 top-64 left-80 py-1 px-3 rounded bg-[#0c0c0c]/50 backdrop-blur border border-blue-200/12 shadow-xl shadow-black/40 text-[14px]">
+              Product Card
+            </div>
             <div className="absolute inset-0 z-10 bg-gradient-to-b from-transparent to-[#0c0c0c]"></div>
             <div className="absolute h-124 w-[480px] left-1 md:left-24 top-5 rounded-lg border-2 border-white/8 bg-[#181818] p-2.5 space-y-2">
               <div className="flex items-center justify-between">
@@ -279,7 +312,7 @@ const CardFeature = ({label, desc, index}) => {
   return (
     <div className='relative w-full space-y-1'>
       {renderIllustration()}
-      <div className={`${cardSpecs} absolute bottom-0 right-1 w-[420px] z-10 flex flex-col gap-y-5 pt-10 pb-4`}>
+      <div className={`${cardSpecs} absolute bottom-0 right-1 w-[420px] z-50 flex flex-col gap-y-5 pt-10 pb-4`}>
         <div className="space-y-1.5">
           <div className={textHeading3}>{label}</div>
           <div className={`text-[14px] md:text-[15px] text-justify text-white/60 pr-8`}>{desc}</div>
