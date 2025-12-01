@@ -14,7 +14,7 @@ const CardFeature = ({label, desc, index}) => {
             <div className="hidden md:block absolute z-20 top-18 left-124 py-1 px-3 rounded bg-[#0c0c0c]/50 backdrop-blur border border-blue-200/12 shadow-xl shadow-black/40 text-[14px]">
               Highlight Product
             </div>
-            <div className="hidden md:block absolute z-20 top-36 left-64 py-1 px-3 rounded bg-[#0c0c0c]/50 backdrop-blur border border-blue-200/12 shadow-xl shadow-black/40 text-[14px]">
+            <div className="hidden md:block absolute z-20 top-40 left-64 py-1 px-3 rounded bg-[#0c0c0c]/50 backdrop-blur border border-blue-200/12 shadow-xl shadow-black/40 text-[14px]">
               Client Logo
             </div>
             <div className="hidden md:block absolute z-20 top-64 left-20 py-1 px-3 rounded bg-[#0c0c0c]/50 backdrop-blur border border-blue-200/12 shadow-xl shadow-black/40 text-[14px]">
@@ -83,43 +83,42 @@ const CardFeature = ({label, desc, index}) => {
             <div className="hidden md:block absolute z-20 top-24 left-124 py-1 px-3 rounded bg-[#0c0c0c]/50 backdrop-blur border border-blue-200/12 shadow-xl shadow-black/40 text-[14px]">
               Company Insight
             </div>
-            <div className="hidden md:block absolute z-20 top-40 left-80 py-1 px-3 rounded bg-[#0c0c0c]/50 backdrop-blur border border-blue-200/12 shadow-xl shadow-black/40 text-[14px]">
+            <div className="hidden md:block absolute z-20 top-51 left-110 py-1 px-3 rounded bg-[#0c0c0c]/50 backdrop-blur border border-blue-200/12 shadow-xl shadow-black/40 text-[14px]">
               Client Logo
             </div>
             <div className="hidden md:block absolute z-20 top-64 left-20 py-1 px-3 rounded bg-[#0c0c0c]/50 backdrop-blur border border-blue-200/12 shadow-xl shadow-black/40 text-[14px]">
               Feature Section
             </div>
             <div className="absolute inset-0 z-10 bg-gradient-to-b from-transparent to-[#0c0c0c]"></div>
-            <div className="absolute h-124 w-[480px] left-1 md:left-24 top-5 rounded-lg border-2 border-white/8 bg-[#181818] p-2.5 space-y-3">
-              <div className="flex items-center justify-between">
-                <span className="h-3 w-3 rounded-full bg-blue-300"></span>
-                <div className="flex gap-x-1">
-                  <div className="h-2 w-6 rounded bg-blue-300"></div>
-                  <div className="h-2 w-6 rounded bg-blue-300"></div>
-                  <div className="h-2 w-6 rounded bg-blue-300"></div>
-                  <div className="h-2 w-6 rounded bg-blue-300"></div>
-                </div>
-              </div>
-              <div className="space-y-6">
-                <div className="space-y-2">
-                  <div className="flex gap-x-1.5">
-                    <div className="h-32 w-full rounded-md bg-neutral-700"></div>
-                    <div className="h-32 w-2/5 rounded-md bg-neutral-700"></div>
+            <div className="absolute h-124 w-[480px] left-1 md:left-24 top-5 rounded-lg border-2 border-white/8 bg-[#181818] p-2.5 space-y-6">
+              <div className="space-y-2">
+                <div className="flex items-center justify-between">
+                  <span className="h-3 w-3 rounded-full bg-blue-300"></span>
+                  <div className="flex gap-x-1">
+                    <div className="h-2 w-6 rounded bg-blue-300"></div>
+                    <div className="h-2 w-6 rounded bg-blue-300"></div>
+                    <div className="h-2 w-6 rounded bg-blue-300"></div>
+                    <div className="h-2 w-6 rounded bg-blue-300"></div>
                   </div>
-                  <div className="flex flex-col justify-center gap-y-1.5">
-                    <div className="space-y-1">
-                      <div className="h-1.5 w-20 rounded bg-neutral-700"></div>
-                      <div className="h-1.5 w-32 rounded bg-neutral-700"></div>
-                    </div>
+                </div>
+                <div className="flex gap-x-1.5">
+                  <div className="h-32 w-full rounded-md bg-neutral-700"></div>
+                  <div className="h-32 w-2/5 rounded-md bg-neutral-700"></div>
+                </div>
+                <div className="flex justify-between w-full items-center">
+                  <div className="space-y-1">
+                    <div className="h-1.5 w-20 rounded bg-neutral-700"></div>
+                    <div className="h-1.5 w-32 rounded bg-neutral-700"></div>
                     <div className="h-2 w-8 rounded bg-blue-300"></div>
                   </div>
+                  <div className="h-8 w-2/5 rounded-md bg-neutral-700"></div>
                 </div>
-                <div className="grid grid-cols-2 gap-1.5">
-                  <div className="h-full rounded-md bg-neutral-700"></div>
-                  <div className="space-y-1.5">
-                    <div className="h-18 rounded-md bg-neutral-700"></div>
-                    <div className="h-18 rounded-md bg-neutral-700"></div>
-                  </div>
+              </div>
+              <div className="grid grid-cols-2 gap-1.5">
+                <div className="h-full rounded-md bg-neutral-700"></div>
+                <div className="space-y-1.5">
+                  <div className="h-18 rounded-md bg-neutral-700"></div>
+                  <div className="h-18 rounded-md bg-neutral-700"></div>
                 </div>
               </div>
             </div>
@@ -243,6 +242,18 @@ const CardFeature = ({label, desc, index}) => {
       case 3: // Custom Web App
         return (
           <div className="relative h-100 w-full rounded-md overflow-hidden">
+            <div className="hidden md:block absolute z-20 top-16 left-16 py-1 px-3 rounded bg-[#0c0c0c]/50 backdrop-blur border border-blue-200/12 shadow-xl shadow-black/40 text-[14px]">
+              Customized Layout
+            </div>
+            <div className="hidden md:block absolute z-20 top-18 left-120 py-1 px-3 rounded bg-[#0c0c0c]/50 backdrop-blur border border-blue-200/12 shadow-xl shadow-black/40 text-[14px]">
+              Customized Content
+            </div>
+            <div className="hidden md:block absolute z-20 top-40 left-64 py-1 px-3 rounded bg-[#0c0c0c]/50 backdrop-blur border border-blue-200/12 shadow-xl shadow-black/40 text-[14px]">
+              Customized Feature
+            </div>
+            <div className="hidden md:block absolute z-20 top-64 left-20 py-1 px-3 rounded bg-[#0c0c0c]/50 backdrop-blur border border-blue-200/12 shadow-xl shadow-black/40 text-[14px]">
+              Customized Functionality
+            </div>
             <div className="absolute inset-0 z-10 bg-gradient-to-b from-transparent to-[#0c0c0c]"></div>
             <div className="absolute h-124 w-[480px] left-1 md:left-24 top-5 rounded-lg border-2 border-white/8 bg-[#181818] p-2.5 space-y-2">
               <div className="flex items-center justify-between">
@@ -312,7 +323,7 @@ const CardFeature = ({label, desc, index}) => {
   return (
     <div className='relative w-full space-y-1'>
       {renderIllustration()}
-      <div className={`${cardSpecs} absolute bottom-0 right-1 w-[420px] z-50 flex flex-col gap-y-5 pt-10 pb-4`}>
+      <div className={`${cardSpecs} absolute -bottom-14 sm:-bottom-10 right-0 sm:w-[420px] z-50 flex flex-col gap-y-5 pt-10 pb-4`}>
         <div className="space-y-1.5">
           <div className={textHeading3}>{label}</div>
           <div className={`text-[14px] md:text-[15px] text-justify text-white/60 pr-8`}>{desc}</div>

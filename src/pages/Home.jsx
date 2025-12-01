@@ -70,7 +70,7 @@ const Home = () => {
       <ParallaxWithModel />
 
       {/* About Section */}
-      <div className="flex flex-col gap-y-8 lg:gap-y-4 w-full lg:max-w-[1080px] pt-6 lg:pt-12 pb-12 px-4">
+      <div className="flex flex-col gap-y-8 lg:gap-y-4 w-full lg:max-w-[1080px] pt-6 md:pt-12 pb-14 px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
           {/* Illustration */}
           <div className="relative w-full min-h-64 md:min-h-72 max-h-[320px] rounded-md flex justify-center items-center bg-gradient-to-br from-blue-500/18 via-blue-500/8 to-transparent overflow-hidden">
@@ -112,7 +112,7 @@ const Home = () => {
       </div>
 
       {/* Feature Section */}
-      <div className="flex flex-col gap-y-8 w-full lg:max-w-[1080px] py-12 px-4">
+      <div className="flex flex-col gap-y-8 w-full lg:max-w-[1080px] pt-12 pb-20 px-4">
         <div className="space-y-1">
           <div className={`${textHeading2} md:text-center`}>
             {DataHome.featureSection.head[language]}
@@ -134,7 +134,7 @@ const Home = () => {
       </div>
 
       {/* Userflow Section */}
-      <div className="flex flex-col gap-y-6 w-full py-12 px-4 lg:px-0 mx-auto">
+      <div className="flex flex-col gap-y-6 w-full py-14 px-4 lg:px-0 mx-auto">
         <div className={`${textHeading2} md:text-center`}>
           {DataHome.clientflowSection.head[language]}
         </div>
