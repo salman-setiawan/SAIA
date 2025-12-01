@@ -27,7 +27,7 @@ const Pricing = () => {
       <Navigation />
 
       {/* Hero Section */}
-      <div className="flex flex-col gap-y-6 w-full lg:max-w-[1140px] pt-20 pb-12 px-4">
+      <div className="flex flex-col gap-y-6 w-full lg:max-w-[1080px] pt-20 pb-12 px-4">
         <div className="flex flex-col gap-y-4">
           <div className={`${textHeading1} max-w-[360px] leading-11`}>
             {DataPricing.heroSection.title[language]}
@@ -58,7 +58,7 @@ const Pricing = () => {
         </div>
       </div>
 
-      <div className="flex flex-col gap-y-4 sm:gap-y-10 w-full lg:max-w-[1140px] py-6 px-4">
+      <div className="flex flex-col gap-y-4 sm:gap-y-10 w-full lg:max-w-[1080px] py-6 px-4">
 
         {/* Service Button */}
         <div className="flex flex-wrap gap-3 md:justify-center">
@@ -92,7 +92,7 @@ const Pricing = () => {
       </div>
 
       {/* CTA Section */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-8 xl:gap-x-12 w-full lg:max-w-[1140px] pt-16 pb-20 px-4 items-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-8 xl:gap-x-12 w-full lg:max-w-[1080px] pt-16 pb-20 px-4 items-center">
         <div className="relative md:hidden h-64 overflow-hidden">
           <div className="absolute inset-0 z-10 bg-gradient-to-b from-transparent via-transparent to-[#0c0c0c]"></div>
           <div className="absolute inset-x-1 -top-22 scale-[0.8] rounded-2xl overflow-hidden">

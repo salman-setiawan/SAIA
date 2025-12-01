@@ -14,7 +14,7 @@ const Navigation = () => {
     <>
       {/* NAVBAR */}
       <div className='fixed top-0 z-[999] flex justify-center w-full backdrop-blur-xs bg-[#0c0c0c]/35'>
-        <div className="flex justify-between w-full items-center max-w-[1140px] px-4 py-3 relative">
+        <div className="flex justify-between w-full items-center max-w-[1080px] px-4 py-3 relative">
 
           <img src="/vite.svg" alt="brand" className="w-[30px] h-[30px]" />
 
@@ -25,6 +25,9 @@ const Navigation = () => {
             </Link>
             <Link to='/pricing'>
               <button className={`px-2 h-[30px] ${textSmall} font-medium cursor-pointer hover:bg-[#202020] rounded-md`}>Pricing</button>
+            </Link>
+            <Link to='/templates'>
+              <button className={`px-2 h-[30px] ${textSmall} font-medium cursor-pointer hover:bg-[#202020] rounded-md`}>Templates</button>
             </Link>
           </div>
 
@@ -56,6 +59,9 @@ const Navigation = () => {
               </Link>
               <Link to='/pricing' onClick={() => setIsMobileMenuOpen(false)}>
                 <button className={`w-full px-4 h-[48px] ${textSmall} font-medium cursor-pointer bg-[#0c0c0c] hover:bg-[#202020] rounded-md text-left`}>Pricing</button>
+              </Link>
+              <Link to='/templates' onClick={() => setIsMobileMenuOpen(false)}>
+                <button className={`w-full px-4 h-[48px] ${textSmall} font-medium cursor-pointer bg-[#0c0c0c] hover:bg-[#202020] rounded-md text-left`}>Templates</button>
               </Link>
               <button className={`w-full px-4 h-[48px] ${textSmall} font-medium cursor-pointer bg-blue-700 hover:bg-blue-900 rounded-md text-left`}>Contact Us</button>
             </div>

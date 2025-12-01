@@ -8,10 +8,12 @@ import Home from './pages/Home.jsx'
 import PageNotFound from './pages/404.jsx'
 import Form from './pages/Form.jsx'
 import Pricing from './pages/Pricing.jsx'
+import Templates from './pages/Templates.jsx'
 
 const router = createBrowserRouter([
   { path: "/", element: <Home /> },
   { path: "/pricing", element: <Pricing /> },
+  { path: "/templates", element: <Templates /> },
   { path: "/form", element: <Form /> },
   { path: "/404", element: <PageNotFound /> },
   { path: "*", element: <Navigate to="/404" replace /> },
