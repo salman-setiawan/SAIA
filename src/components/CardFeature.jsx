@@ -2,7 +2,7 @@ import React from 'react'
 import { cardSpecs, textHeading3 } from '../data/uiStyle'
 import Button from '../components/Button';
 
-const CardFeature = ({label, desc, index}) => {
+const CardFeature = ({label, desc, index, best}) => {
   const renderIllustration = () => {
     switch(index) {
       case 0: // Landing Page
@@ -324,6 +324,34 @@ const CardFeature = ({label, desc, index}) => {
     <div className='relative w-full space-y-1'>
       {renderIllustration()}
       <div className={`${cardSpecs} absolute -bottom-14 sm:-bottom-10 right-0 sm:w-[420px] z-50 flex flex-col gap-y-5 pt-10 pb-4`}>
+        {best &&
+          <>
+            <style>
+              {`@keyframes auroraMove {
+                  0% { background-position: 0% 0%, 100% 100%, 50% 0%; }
+                  33% { background-position: 80% 20%, 20% 80%, 60% 40%; }
+                  66% { background-position: 20% 60%, 80% 30%, 40% 90%; }
+                  100% { background-position: 0% 0%, 100% 100%, 50% 50%; }
+                }`}
+            </style>
+            <div
+              style={{
+                background: `
+                  radial-gradient(circle at 20% 30%, rgba(22, 96, 255, 0.55), transparent 70%),
+                  radial-gradient(circle at 20% 30%, rgba(37, 22, 255, 0.55), transparent 70%)
+                `,
+                backgroundSize: '300% 300%',
+                animation: 'auroraMove 4s ease-in-out infinite'
+              }}
+              className="absolute -top-4.5 right-3 pl-2 pr-3 py-1.5 rounded-md w-fit shadow-lg shadow-black/30 flex items-center gap-x-1.5 backdrop-blur-sm text-[14px] font-medium"
+            >
+              <span className="material-symbols-outlined" style={{ fontSize: '20px', fontVariationSettings: "'opsz' 20" }}>
+                check_circle
+              </span>
+              {best}
+            </div>
+          </>
+        }
         <div className="space-y-1.5">
           <div className={textHeading3}>{label}</div>
           <div className={`text-[14px] md:text-[15px] text-justify text-white/60 pr-8`}>{desc}</div>

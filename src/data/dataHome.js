@@ -36,6 +36,7 @@ const DataHome = {
     },
     feature: [
       {
+        best: { en: 'Best-Selling Product' , id: 'Produk Terlaris' },
         head: { en: 'Landing Page', id: 'Landing Page' },
         desc: { en: 'High converting landing pages designed to attract and convert visitors.', id: 'Landing page yang dirancang untuk menarik perhatian dan meningkatkan konversi.' },
       },
@@ -94,7 +95,7 @@ const DataHome = {
       id: 'Cara kerjanya seperti ini',
     },
     cta: {
-      en: 'Choose a Plan', id: 'Pilih Rencana',
+      en: 'Choose a Plan Right Now', id: 'Pilih Rencana Sekarang Juga',
     },
     url: '/pricing',
     flow: [

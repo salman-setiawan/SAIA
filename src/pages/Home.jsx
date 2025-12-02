@@ -126,6 +126,7 @@ const Home = () => {
             <CardFeature
               key={index}
               index={index}
+              best={f.best?.[language]}
               label={f.head[language]}
               desc={f.desc[language]}
             />
@@ -138,7 +139,16 @@ const Home = () => {
         <div className={`${textHeading2} md:text-center`}>
           {DataHome.clientflowSection.head[language]}
         </div>
-        <div className="overflow-x-auto lg:overflow-x-auto lg:min-h-[770px] lg:bg-[#141414] 3xl:flex 3xl:justify-center">
+        <div className="relative overflow-x-auto lg:overflow-x-auto lg:min-h-[770px] lg:bg-[#141414] 3xl:flex 3xl:justify-center">
+          <div
+            className="absolute inset-0 size-full hidden lg:block"
+            style={{
+              backgroundImage: "radial-gradient(circle at 1px 1px, currentcolor 1px, transparent 0px)",
+              backgroundSize: "14px 14px",
+              backgroundPosition: "7px 7px",
+              opacity: 0.04
+            }}
+          ></div>
           {/* Container utama */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-8 lg:relative lg:min-w-[1890px] lg:h-[680px]">
             <UserflowConnector />
